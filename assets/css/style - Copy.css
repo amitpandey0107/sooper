@@ -12,13 +12,13 @@
 * 02.Bootstrap-custom
     -Page-custom
 * 03.Typography
-* 04.Tabs 
+* 04.Tabs
 * 05.Modal
 * 06.Icons
 * 07.Bootstrap-UI
 * 08.Progressbar
-* 09.Carousel  
-* 10.Grid   
+* 09.Carousel
+* 10.Grid
 * 11.Calender
 * 12.Portlets
 * 13.Widgets
@@ -42,17 +42,18 @@
 /*---------------------
    1. body css
 -----------------------*/
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 @import url('https://fonts.googleapis.com/css?family=Orbitron:900');
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     color: #323232;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
     overflow-x: hidden;
     background: #2d3540;
+    -webkit-font-smoothing: antialiased;
 }
 
 a{
@@ -276,6 +277,14 @@ p {
 
 .m-b-30 {
     margin-bottom: 30px;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
+
+.m-t-20 {
+    margin-top: 20px;
 }
 
 .table td,
@@ -550,7 +559,7 @@ p {
 }
 
 
-/*----------------- 
+/*-----------------
     8.progress
 ------------------*/
 
@@ -926,7 +935,7 @@ a:not([href]):not([tabindex]):hover {
 
 
 /*-------------------
-     12.Portlets 
+     12.Portlets
 --------------------*/
 
 .portlet {
@@ -1491,8 +1500,12 @@ lesshat-selector {
 }
 
 .cr-styled input:checked + i {
-    border-color: #2d3540;
-    color: #2d3540;
+    border-color: #2d61f2;
+    color: #2d61f2;
+}
+
+.wizard > .content > .body label {
+  text-align: left;
 }
 
 .cr-styled input[type=radio] + i {
@@ -1703,8 +1716,7 @@ lesshat-selector {
 .wizard > .steps .done a:active,
 .wizard > .steps .done a:hover {
     background-color: #e9f2fb;
-    color: #2e61f2; 
-    font-weight: 700;
+    color: #2e61f2;
     font-size: 15px;
 }
 
@@ -1730,7 +1742,7 @@ lesshat-selector {
 .wizard > .content > .body {
   width: 100%;
   height: 100%;
-  padding: 15px 0 0;
+  padding: 45px 0 0;
   position: static; }
 
 .wizard > .steps .number {
@@ -2064,7 +2076,7 @@ input[type="checkbox"]:checked:after {
 
 
 /*----------------
-    18.Mail 
+    18.Mail
  ----------------*/
 
 .mails .mail-rateing {
@@ -2286,7 +2298,7 @@ input[type="checkbox"]:checked:after {
 
 
 /*-----------------
-     21.Timeline 
+     21.Timeline
 ------------------*/
 
 
@@ -2644,7 +2656,7 @@ ul.p-social-link li a {
 -----------------------*/
 
 .footer {
-    background: #e9e9eb;
+    background: #fff;
     padding: 15px 20px;
     color: #232425;
     font-size: 14px;
@@ -2657,11 +2669,6 @@ ul.p-social-link li a {
     24.Responsive
 -------------------------*/
 
-@media (min-width: 1024px) {
-    .body-content {
-        min-height: 1600px;
-    }
-}
 
 @media (max-width: 414px) {
     .btn-mb-5 .btn {
@@ -2716,6 +2723,7 @@ ul.p-social-link li a {
 }
 
 
+
 /*------------------------
     24.Doctor Profile
 -------------------------*/
@@ -2746,126 +2754,4 @@ ul.p-social-link li a {
 }
 #doctorProfile .greyCard {
     background-color: #ADAFCD;
-}
-.procard{
-    position: relative;
-    margin-bottom: 30px;
-    background-color: #ffffff;
-    padding: 10px;
-    border:1px solid #e8e8e8;
-}
-.procard h3 {
-    text-transform: uppercase;
-    color: #2e61f2;
-    font-size: 14px;
-    font-weight: 600; 
-}
-.procard .chkwrp {
-    text-align: right;
-}
-.procard .titlechk {
-    margin-bottom: 20px;
-}
-.procard .profileImage{
-    overflow: hidden;
-    border-radius: 50%;
-    margin-top: 13px;
-}
-.procard .profileImage img {
-    /* height: 50px;
-    width: 50px; */
-    border-radius: 50%;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-}
-.procard p {
-    margin-bottom: 10px;
-}
-.procard p > label {
-    color: #babbc0;
-    width: 86px;
-    margin: 0;
-}
-.procard p > span {
-    color: #40444f;
-}
-#doctorProfile .padleft {
-    padding-left: 10px;
-}
-#doctorProfile .padright {
-    padding-right: 10px;
-}
-
-.delModal {
-    padding-top: 0 !important;
-}
-.delModal .modal-content {
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    width: 40%;
-}
-.greyCard{
-    background-color: #8c8f98;
-}
-.greyCard p > label {
-    color: #efefef;   
-}
-.delModal .btn-model {
-    height: 40px;
-    width: 150px;
-    text-transform: uppercase;
-}
-.delModal span.close {
-    position: absolute;
-    top: 0;
-    right: 5px;
-}
-@media only screen and (max-width:1024px) {
-   .delModal .modal-content {
-       width: 65%;
-   }
-}
-@media only screen and (max-width:771px) {
-    .delModal .modal-content {
-        width: 65%;
-    }
-    .delModal {
-        text-align: center;
-    }
-    .delModal .btnwrap {
-        width: 100%;
-        text-align: center;
-    }
-    .delModal .btnwrap span {
-        display: block;
-        margin: 15px 0;
-    }
-    .delModal .btn-model {
-        width: 200px;
-    }
-    .delModal p.redText {
-        font-size: 19px;
-    }
-}
-@media only screen and (max-width:575px) {
-    .delModal .modal-content {
-        width: 80%;
-        border-radius: 15px;
-    }
-}
-@media only screen and (max-width:380px) {
-    .delModal .modal-content {
-        width: 85%;
-    }
-    .delModal .btn-model {
-        width: 150px;
-    }
-    .delModal p.redText {
-        font-size: 16px;
-    }
 }
