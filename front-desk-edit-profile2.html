@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Mannat Themes">
+        <meta name="keyword" content="">
+
+        <title>SooperDr | Profile</title>
+
+        <!-- Theme icon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link href="assets/plugins/dropify/css/dropify.min.css" rel="stylesheet">
+
+        <!-- Plugins css-->
+        <link href="assets/plugins/clockpicker/jquery-clockpicker.min.css" rel="stylesheet" />
+        <link href="assets/plugins/timepicker/tempusdominus-bootstrap-4.css" rel="stylesheet" />
+        <link href="assets/plugins/timepicker/bootstrap-material-datetimepicker.css" rel="stylesheet">
+
+        <!--Form Wizard-->
+        <link href="assets/plugins/form-wizard/jquery.steps.css" rel="stylesheet" type="text/css" />
+
+        <link href="assets/plugins/morris-chart/morris.css" rel="stylesheet">
+        <!-- Theme Css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/slidebars.min.css" rel="stylesheet">
+        <link href="assets/css/icons.css" rel="stylesheet">
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <style>
+            .wizard > .steps > ul > li {
+                width: 50%;
+            }
+            .fields {
+                border: 0 !important;
+                border-bottom: dashed 1px !important;
+                padding:0px !important;
+             /* text-decoration: underline dotted red; */
+            }
+            textarea{
+                border: 0 !important;
+                border-bottom: dashed 1px !important;
+                
+            }
+            label{
+                margin-top: 15px;
+            }
+            .mt10{
+                margin-top: 15px;
+            }
+            .closebutton{
+            font-size: 15px; 
+            color: white; 
+            background-color: red; 
+            padding: 10px; 
+            border-radius: 5px;
+            }
+            .closebuttongreen{
+                font-size: 15px; 
+                color: white; 
+                background-color: green; 
+                padding: 10px; 
+                border-radius: 5px;
+            }
+             .closebuttonblue{
+                font-size: 12px; 
+                color: white; 
+                background-color: blue; 
+                padding: 5px; 
+                float: right
+            }
+            .innerheading{
+                border-bottom: 1px solid; 
+                border-color: #495057;     
+                padding-bottom: 10px;
+            }
+            @media only screen and (max-width: 600px) {
+            .side-navigation > li.menu-list > a:after {
+            display: none !important;
+            }
+            }
+            @media screen and (max-width: 1024px){
+            .img-logo{
+            width: 10px;
+            }
+            .hidden-menu{
+            display: none;
+            }
+            .sidebar-open .body-content {
+                margin-left: 60px !important;
+            }
+            }
+        </style>
+    </head>
+
+     <body class="sticky-header sidebar-open">
+        <section>
+            <!-- sidebar left start-->
+            <div class="sidebar-left">
+                <div class="sidebar-left-info">
+
+
+                    <!--sidebar nav start-->
+                    <ul class="side-navigation">
+                        <li class="active">
+                            <a href="index.html"><i class="mdi mdi-gauge"></i> <span class="hidden-menu">Dashboard</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-shredder"></i> <span class="hidden-menu">Appointments</span></a>
+                        <ul class="child-list">
+                                <li><a href="appointment-schedule.html"> Schedule</a></li>
+                                <li><a href="appointment-check-in.html"> Checkin</a></li>
+                                <li><a href="appointment-check-out.html"> Checkout</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="profile-dashboard.html"><i class="mdi mdi-fingerprint"></i> <span class="hidden-menu">Profile</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-message-text-outline"></i> <span class="hidden-menu">Message</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-lightbulb-outline"></i> <span class="hidden-menu">Help</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-qrcode"></i> <span class="hidden-menu">Extend my profile</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-email-open-outline"></i> <span class="hidden-menu">Contact</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-heart-box-outline"></i> <span class="hidden-menu">About Sooper Dr</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-tune"></i> <span class="hidden-menu">Our Plans</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-paperclip"></i> <span class="hidden-menu">Terms & Conditions</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-key-plus"></i> <span class="hidden-menu">Privacy Statements</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-flag-outline"></i> <span class="hidden-menu">Careers</span></a>
+                        </li>
+
+                    </ul><!--sidebar nav end-->
+                </div>
+            </div><!-- sidebar left end-->
+
+            <!-- body content start-->
+            <div class="body-content">
+                <!-- header section start-->
+                <div class="header-section">
+                    <!--logo and logo icon start-->
+                    <div class="logo">
+                        <a href="index.html">
+                            <span class="logo-img">
+                                <img src="assets/images/logo.svg" class="img-logo" alt="" height="26">
+                            </span>
+                        </a>
+                    </div>
+
+                    <!--toggle button start-->
+                    <a class="toggle-btn"><i class="ti ti-menu"></i></a>
+                    <!--toggle button end-->
+
+                    <!--mega menu start-->
+                    <div id="navbar-collapse-1" class="navbar-collapse collapse mega-menu">
+                        <ul class="nav navbar-nav">
+                             <!-- Classic list -->
+                            <li>
+                                <form class="search-content" action="index.html" method="post">
+                                    <input type="text" class="form-control mt-3" name="keyword" placeholder="Search...">
+                                    <span class="search-button"><i class="ti ti-search"></i></span>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--mega menu end-->
+
+                    <div class="notification-wrap">
+                        <!--right notification start-->
+                        <div class="right-notification">
+                            <ul class="notification-menu">
+                                <li>
+                                    <a href="javascript:;" class="notification" data-toggle="dropdown">
+                                        <i class="mdi mdi-bell-outline"></i>
+                                        <span class="badge badge-success">4</span>
+                                    </a>
+                                    <ul class="dropdown-menu mailbox dropdown-menu-right">
+                                        <li>
+                                          <div class="drop-title">Notifications</div>
+                                        </li>
+                                        <li class="notification-scroll">
+                                            <div class="message-center">
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <i class="ti ti-star"></i>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Jane A. Seward</h6>
+                                                        <span class="mail-desc">Iwon meddle and...</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <i class="ti ti-heart"></i>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Michael W. Salazar</h6>
+                                                        <span class="mail-desc">Lovely gide learn for you...</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <i class="ti ti-image"></i>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>David D. Chen</h6>
+                                                        <span class="mail-desc">Send his new photo...</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <i class="ti ti-bell"></i>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Irma J. Hendren</h6>
+                                                        <span class="mail-desc">6:00 pm our meeting so...</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="text-center bg-light" href="javascript:void(0);">
+                                                <strong>See all notifications</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-settings m-r-5 text-muted"></i></a>
+                                    <ul class="dropdown-menu mailbox dropdown-menu-right">
+                                        <li>
+                                            <div class="drop-title">New Messages 5</div>
+                                        </li>
+                                        <li class="notification-scroll">
+                                            <div class="message-center">
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                         <img src="assets/images/users/avatar-2.jpg" alt="user" class="rounded-circle">
+                                                         <span class="profile-status online pull-right"></span>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Cassie T. Bishop</h6>
+                                                        <span class="mail-desc">Just see the my admin!</span>
+                                                        <span class="time">9:30 AM</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <img src="assets/images/users/avatar-3.jpg" alt="user" class="rounded-circle">
+                                                        <span class="profile-status busy pull-right"></span>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Rudy A. Scott</h6>
+                                                        <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <img src="assets/images/users/avatar-4.jpg" alt="user" class="rounded-circle">
+                                                        <span class="profile-status away pull-right"></span>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Kevin D. Jernigan</h6>
+                                                        <span class="mail-desc">I am a singer!</span>
+                                                        <span class="time">9:08 AM</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <img src="assets/images/users/avatar-5.jpg" alt="user" class="rounded-circle">
+                                                        <span class="profile-status offline pull-right"></span>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Jane A. Seward</h6>
+                                                        <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="text-center bg-light" href="javascript:void(0);"> <strong>See all notifications</strong> </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="javascript:;" data-toggle="dropdown">
+                                        <img src="assets/images/users/avatar-1.jpg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right profile-menu">
+                                        <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle m-r-5 text-muted"></i> My Profile</a>
+                                        <a class="dropdown-item" href="#"><i class="mdi mdi-logout m-r-5 text-muted"></i> Logout</a>
+                                    </div>
+
+                                </li>
+
+                            </ul>
+                        </div><!--right notification end-->
+                    </div>
+                </div>
+                <!-- header section end-->
+
+                <div class="container-fluid">
+                    <div class="page-head">
+                        <h4 class="mt-2 mb-2">EDIT PROFILE - FRONT DESK</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <div class="">
+                                        <section class="mt-3 ml-2 align-items-center">
+                                            <div class="form-group row">
+                                                <div class="col-md-2">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <img src="assets/images/users/avatar-1.jpg" style="border-radius: 5px;">
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <h5 class="innerheading">Personal Information</h5>
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                     <label>First Name</label>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                     <input id="name" name="name" type="text" class="required form-control fields" value="Denzel">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                     <label>Last Name</label>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                     <input id="name" name="name" type="text" class="required form-control fields" value="Washington">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                     <label>Date of Birth</label>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                     <input id="name" name="name" type="text" class="required form-control fields" value="26/05/1984">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                </div>
+                                            </div>
+                                            <br>
+                                             <div class="form-group row">
+                                                <div class="col-md-2">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h5 class="innerheading">CONTACT DETAILS</h5>
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                     <label>Address</label>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <input id="contact" name="contact" type="text" class="required form-control fields" value=" Inox Box 1546 Near Bank of America Sollins 75023 USA">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                     <label>Contact</label>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                     <input id="contact" name="contact" type="text" class="required form-control fields" value="(888) 890 1234">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                     <label>Email</label>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                     <input id="name" name="name" type="text" class="required form-control fields" value="denzel@sooperdr.com">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <h5 class="innerheading">ADDITIONAL INFORMATION</h5>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                     <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum pulvinar velit, sit amet vulputate risus mollis ut.</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                </div>
+                                            </div>
+
+
+                                        </section>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--END ROW-->
+
+                </div><!--end container-->
+
+                <!--footer section start-->
+                <footer class="footer">
+                    2020 &copy; SooperDr Inc. All Right Reserved.
+                </footer>
+                <!--footer section end-->
+            </div>
+            <!--end body content-->
+        </section>
+
+        <!-- jQuery -->
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery-migrate.js"></script>
+        <script src="assets/js/modernizr.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.min.js"></script>
+        <script src="assets/js/slidebars.min.js"></script>
+
+        <!--plugins js-->
+        <script src="assets/plugins/counter/jquery.counterup.min.js"></script>
+        <script src="assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+        <script src="assets/plugins/sparkline-chart/jquery.sparkline.min.js"></script>
+        <script src="assets/pages/jquery.sparkline.init.js"></script>
+
+        <script src="assets/plugins/form-wizard/jquery.steps.min.js"></script>
+        <script src="assets/plugins/jquery.validate/jquery.validate.min.js"></script>
+        <script src="assets/pages/jquery.wizard.init.js"></script>
+
+        <script src="assets/plugins/timepicker/moment.js"></script>
+        <script src="assets/plugins/clockpicker/jquery-clockpicker.min.js"></script>
+        <script src="assets/plugins/timepicker/tempusdominus-bootstrap-4.js"></script>
+        <script src="assets/plugins/timepicker/bootstrap-material-datetimepicker.js"></script>
+        <!--colorpcker-->
+
+        <script src="assets/plugins/jquery-multi-select/jquery.multi-select.js" type="text/javascript"></script>
+        <script src="assets/plugins/jquery-multi-select/jquery.quicksearch.js" type="text/javascript"></script>
+        <script src="assets/plugins/bootstrap-inputmask/bootstrap-inputmask.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/bootstrap-select/bootstrap-select.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/spinner/spinner.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/select2/select2.min.js" type="text/javascript"></script>
+        <script src="assets/pages/jquery.form-advance.init.js" type="text/javascript"></script>
+
+        <script src="assets/plugins/chart-js/Chart.bundle.js"></script>
+        <script src="assets/plugins/morris-chart/raphael-min.js"></script>
+        <script src="assets/plugins/morris-chart/morris.js"></script>
+        <script src="assets/pages/dashboard-init.js"></script>
+
+        <script src="assets/plugins/dropify/js/dropify.min.js"></script>
+
+
+        <!--app js-->
+        <script src="assets/js/jquery.app.js"></script>
+        <script>
+            jQuery(document).ready(function($) {
+                $('.counter').counterUp({
+                delay: 100,
+                time: 1200
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                // Basic
+                $('.dropify').dropify();
+
+                // Translated
+                $('.dropify-fr').dropify({
+                    messages: {
+                        default: 'Glissez-déposez un fichier ici ou cliquez',
+                        replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+                        remove:  'Supprimer',
+                        error:   'Désolé, le fichier trop volumineux'
+                    }
+                });
+
+                // Used events
+                var drEvent = $('#input-file-events').dropify();
+
+                drEvent.on('dropify.beforeClear', function(event, element){
+                    return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
+                });
+
+                drEvent.on('dropify.afterClear', function(event, element){
+                    alert('File deleted');
+                });
+
+                drEvent.on('dropify.errors', function(event, element){
+                    console.log('Has Errors');
+                });
+
+                var drDestroy = $('#input-file-to-destroy').dropify();
+                drDestroy = drDestroy.data('dropify')
+                $('#toggleDropify').on('click', function(e){
+                    e.preventDefault();
+                    if (drDestroy.isDropified()) {
+                        drDestroy.destroy();
+                    } else {
+                        drDestroy.init();
+                    }
+                })
+            });
+        </script>
+    </body>
+</html>

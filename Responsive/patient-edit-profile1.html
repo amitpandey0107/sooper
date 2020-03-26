@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Mannat Themes">
+        <meta name="keyword" content="">
+
+        <title>SooperDr | Profile</title>
+
+        <!-- Theme icon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link href="assets/plugins/dropify/css/dropify.min.css" rel="stylesheet">
+
+        <!-- Plugins css-->
+        <link href="assets/plugins/timepicker/tempusdominus-bootstrap-4.css" rel="stylesheet" />
+
+        <!--Form Wizard-->
+        <link href="assets/plugins/form-wizard/jquery.steps.css" rel="stylesheet" type="text/css" />
+
+        <!-- Theme Css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/slidebars.min.css" rel="stylesheet">
+        <link href="assets/css/icons.css" rel="stylesheet">
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <style>
+         .hide-mobile{
+                display: none;
+            }
+            .image{
+                border-radius: 50%;
+                width: 80px;
+            }
+            .custom_column{
+                padding-right: 5px !important;
+                padding-left: 5px !important;
+            }
+            .f-s-13{
+                font-size: 13px;
+                margin-left: 5px;
+            }
+             .m-l-20{
+                margin-left: 20px;
+            }
+
+             @media only screen and (max-width: 600px) {
+            .side-navigation > li.menu-list > a:after {
+            display: none !important;
+            }
+             .header-title {
+            margin-top: 70px;
+            }
+            .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+                width: auto;
+            }
+            .float-none-mobile{
+                float: none !important;
+                margin-left: 60px;
+            }
+            .custom_column {
+                padding-right: 0px !important;
+                padding-left: 0px !important;
+            }
+            .footer {
+                text-align: left;
+            }
+            .m-l-5{
+                margin-left:25px;
+            }
+            .m-l-minus{
+                margin-left: -31px;
+            }
+            .m-t-10{
+                margin-top: 10px;
+
+            }
+            .hide-box{
+                    display: none;
+                }
+
+            .logo-mobile{
+                margin-left: -27px;
+                display: block;
+                }
+            }
+             @media (min-width: 768px) and (max-width: 1024px) {
+                .m-l-75{
+                    margin-left: 75px;
+                }
+                .width75{
+                    width: 75%;
+                }
+                .header-title {
+                margin-top: 60px;
+                }
+                .button-width{
+                    max-width: 42%;
+                }
+                .modal-content {
+                    padding: 28px;
+                    width: 65%;
+                }
+                .hide-box{
+                    display: none;
+                }
+
+                .logo-mobile{
+                margin-left: -27px;
+                display: block;
+                }
+            }
+            @media screen and (max-width: 1024px){
+            .img-logo{
+            width: 10px;
+            }
+            .hidden-menu{
+            display: none;
+            }
+            .sidebar-open .body-content {
+                margin-left: 60px !important;
+            }
+
+            }
+        </style>
+    </head>
+
+    <body class="sticky-header sidebar-open">
+        <section>
+            <!-- sidebar left start-->
+            <div class="sidebar-left">
+                <div class="sidebar-left-info">
+
+
+                    <!--sidebar nav start-->
+                    <ul class="side-navigation">
+                        <li class="active">
+                            <a href="index.html"><i class="mdi mdi-gauge"></i> <span class="hidden-menu">Dashboard</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-shredder"></i> <span class="hidden-menu">Appointments</span></a>
+                        <ul class="child-list">
+                                <li><a href="appointment-schedule.html"> Schedule</a></li>
+                                <li><a href="appointment-check-in.html"> Checkin</a></li>
+                                <li><a href="appointment-check-out.html"> Checkout</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="profile-dashboard.html"><i class="mdi mdi-fingerprint"></i> <span class="hidden-menu">Profile</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-message-text-outline"></i> <span class="hidden-menu">Message</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-lightbulb-outline"></i> <span class="hidden-menu">Help</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-qrcode"></i> <span class="hidden-menu">Extend my profile</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-email-open-outline"></i> <span class="hidden-menu">Contact</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-heart-box-outline"></i> <span class="hidden-menu">About Sooper Dr</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-tune"></i> <span class="hidden-menu">Our Plans</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-paperclip"></i> <span class="hidden-menu">Terms & Conditions</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-key-plus"></i> <span class="hidden-menu">Privacy Statements</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-flag-outline"></i> <span class="hidden-menu">Careers</span></a>
+                        </li>
+
+                    </ul><!--sidebar nav end-->
+                </div>
+            </div><!-- sidebar left end-->
+
+            <!-- body content start-->
+            <div class="body-content">
+                <!-- header section start-->
+                <div class="header-section">
+                    <!--logo and logo icon start-->
+                    <div class="logo">
+                        <img src="assets/images/post/logo.svg" class="hide-mobile logo-mobile" alt="" height="45">
+                        <a href="index.html">
+                            <span class="logo-img">
+                                <img src="assets/images/logo.svg" class="img-logo hide-box" alt="" height="26">
+                                
+                            </span>
+                        </a>
+                    </div>
+
+
+                    <!--toggle button start-->
+                    <a class="toggle-btn"><i class="ti ti-menu"></i></a>
+                    <!--toggle button end-->
+
+                    <!--mega menu start-->
+                    <div id="navbar-collapse-1" class="navbar-collapse collapse mega-menu">
+                        <ul class="nav navbar-nav">
+                             <!-- Classic list -->
+                            <li>
+                                <form class="search-content" action="index.html" method="post">
+                                    <input type="text" class="form-control mt-3" name="keyword" placeholder="Search...">
+                                    <span class="search-button"><i class="ti ti-search"></i></span>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--mega menu end-->
+
+                    <div class="notification-wrap">
+                        <!--right notification start-->
+                        <div class="right-notification">
+                            <ul class="notification-menu">
+                                <li>
+                                    <a href="javascript:;" class="notification" data-toggle="dropdown">
+                                        <i class="mdi mdi-bell-outline"></i>
+                                        <span class="badge badge-success">4</span>
+                                    </a>
+                                    <ul class="dropdown-menu mailbox dropdown-menu-right">
+                                        <li>
+                                          <div class="drop-title">Notifications</div>
+                                        </li>
+                                        <li class="notification-scroll">
+                                            <div class="message-center">
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <i class="ti ti-star"></i>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Jane A. Seward</h6>
+                                                        <span class="mail-desc">Iwon meddle and...</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <i class="ti ti-heart"></i>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Michael W. Salazar</h6>
+                                                        <span class="mail-desc">Lovely gide learn for you...</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <i class="ti ti-image"></i>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>David D. Chen</h6>
+                                                        <span class="mail-desc">Send his new photo...</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <i class="ti ti-bell"></i>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Irma J. Hendren</h6>
+                                                        <span class="mail-desc">6:00 pm our meeting so...</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="text-center bg-light" href="javascript:void(0);">
+                                                <strong>See all notifications</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-settings m-r-5 text-muted"></i></a>
+                                    <ul class="dropdown-menu mailbox dropdown-menu-right">
+                                        <li>
+                                            <div class="drop-title">New Messages 5</div>
+                                        </li>
+                                        <li class="notification-scroll">
+                                            <div class="message-center">
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                         <img src="assets/images/users/avatar-2.jpg" alt="user" class="rounded-circle">
+                                                         <span class="profile-status online pull-right"></span>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Cassie T. Bishop</h6>
+                                                        <span class="mail-desc">Just see the my admin!</span>
+                                                        <span class="time">9:30 AM</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <img src="assets/images/users/avatar-3.jpg" alt="user" class="rounded-circle">
+                                                        <span class="profile-status busy pull-right"></span>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Rudy A. Scott</h6>
+                                                        <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <img src="assets/images/users/avatar-4.jpg" alt="user" class="rounded-circle">
+                                                        <span class="profile-status away pull-right"></span>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Kevin D. Jernigan</h6>
+                                                        <span class="mail-desc">I am a singer!</span>
+                                                        <span class="time">9:08 AM</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <img src="assets/images/users/avatar-5.jpg" alt="user" class="rounded-circle">
+                                                        <span class="profile-status offline pull-right"></span>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Jane A. Seward</h6>
+                                                        <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="text-center bg-light" href="javascript:void(0);"> <strong>See all notifications</strong> </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="javascript:;" data-toggle="dropdown">
+                                        <img src="assets/images/users/avatar-1.jpg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right profile-menu">
+                                        <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle m-r-5 text-muted"></i> My Profile</a>
+                                        <a class="dropdown-item" href="#"><i class="mdi mdi-logout m-r-5 text-muted"></i> Logout</a>
+                                    </div>
+
+                                </li>
+
+                            </ul>
+                        </div><!--right notification end-->
+                    </div>
+                </div>
+                <!-- header section end-->
+
+                <div class="container-fluid">
+                    <div class="page-head header-title">
+                        <h4 class="mt-2 mb-2">EDIT PROFILE - PATIENT</h4>
+                    </div>
+                    <div class="row hide-box">
+                        <div class="col-lg-12">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                   <div class="row">
+                                        <div class="col-md-4">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                </div>
+                                                <div class="col-md-8">
+                                                <h6 class="text-center m-l-minus">ENTER PATIENT NAME OR ID</h6>
+                                                </div>
+                                                <div class="col-md-2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                        </div>
+                                   </div>
+                                   <br>
+                                   <div class="row">
+                                        <div class="col-md-4">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control m-l-5" placeholder="Patient Name">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control m-l-5 m-t-10" placeholder="Patient ID">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                        </div>
+                                   </div>
+                                   <br>
+                                   <div class="row">
+                                        <div class="col-md-4">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                </div>
+                                                <div class="col-md-6">
+                                                <button type="submit" name="find" class="btn btn-primary" style="margin-left: 13px;border-radius: 20px;">FIND PATIENT</button>
+                                                </div>
+                                                <div class="col-md-3">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--END ROW-->
+                    <div class="row m-l-75">
+                        <div class="col-lg-4 width75">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6>Denzel Washington</h6>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="#" name="edit"  class="float-none-mobile float-right">Edit Profile</a>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-md-3 custom_column">
+                                           <img src="assets/images/users/avatar-1.jpg" class="image">
+                                        </div>
+                                        <div class="col-md-4 custom_column">
+                                            <label class="f-s-13 m-l-20">Date of Birth</label><br>
+                                            <label class="f-s-13 m-l-20">Address</label><br>
+                                            <label class="f-s-13 m-l-20">Contact</label><br>
+                                            <label class="f-s-13 m-l-20">Email</label>
+                                        </div>
+                                        <div class="col-md-5 custom_column">
+                                            <label class="f-s-13">05-Jan-1995</label><br>
+                                            <label class="f-s-13">Sollins 75023 USA</label><br>
+                                            <label class="f-s-13">+1 234 567 8910</label><br>
+                                            <label class="f-s-13">denzel@sooperdr.com</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 width75">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6>Denzel Washington</h6>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="#" name="edit" class="float-none-mobile float-right">Edit Profile</a>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-md-3 custom_column">
+                                           <img src="assets/images/users/avatar-1.jpg" class="image">
+                                        </div>
+                                        <div class="col-md-4 custom_column">
+                                            <label class="f-s-13">Date of Birth</label><br>
+                                            <label class="f-s-13">Address</label><br>
+                                            <label class="f-s-13">Contact</label><br>
+                                            <label class="f-s-13">Email</label>
+                                        </div>
+                                        <div class="col-md-5 custom_column">
+                                            <label class="f-s-13">05-Jan-1995</label><br>
+                                            <label class="f-s-13">Sollins 75023 USA</label><br>
+                                            <label class="f-s-13">+1 234 567 8910</label><br>
+                                            <label class="f-s-13">denzel@sooperdr.com</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 width75">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6>Denzel Washington</h6>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="#" name="edit" class="float-none-mobile float-right">Edit Profile</a>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-md-3 custom_column">
+                                           <img src="assets/images/users/avatar-1.jpg" class="image">
+                                        </div>
+                                        <div class="col-md-4 custom_column">
+                                            <label class="f-s-13 m-l-20">Date of Birth</label><br>
+                                            <label class="f-s-13 m-l-20">Address</label><br>
+                                            <label class="f-s-13 m-l-20">Contact</label><br>
+                                            <label class="f-s-13 m-l-20">Email</label>
+                                        </div>
+                                        <div class="col-md-5 custom_column">
+                                            <label class="f-s-13">05-Jan-1995</label><br>
+                                            <label class="f-s-13">Sollins 75023 USA</label><br>
+                                            <label class="f-s-13">+1 234 567 8910</label><br>
+                                            <label class="f-s-13">denzel@sooperdr.com</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                     <div class="row m-l-75">
+                        <div class="col-lg-4 width75">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6>Denzel Washington</h6>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="#" name="edit" class="float-none-mobile float-right">Edit Profile</a>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-md-3 custom_column">
+                                           <img src="assets/images/users/avatar-1.jpg" class="image">
+                                        </div>
+                                        <div class="col-md-4 custom_column">
+                                            <label class="f-s-13 m-l-20">Date of Birth</label><br>
+                                            <label class="f-s-13 m-l-20">Address</label><br>
+                                            <label class="f-s-13 m-l-20">Contact</label><br>
+                                            <label class="f-s-13 m-l-20">Email</label>
+                                        </div>
+                                        <div class="col-md-5 custom_column">
+                                            <label class="f-s-13">05-Jan-1995</label><br>
+                                            <label class="f-s-13">Sollins 75023 USA</label><br>
+                                            <label class="f-s-13">+1 234 567 8910</label><br>
+                                            <label class="f-s-13">denzel@sooperdr.com</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 width75">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6>Denzel Washington</h6>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="#" name="edit" class="float-none-mobile float-right">Edit Profile</a>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-md-3 custom_column">
+                                           <img src="assets/images/users/avatar-1.jpg" class="image">
+                                        </div>
+                                        <div class="col-md-4 custom_column">
+                                            <label class="f-s-13 m-l-20">Date of Birth</label><br>
+                                            <label class="f-s-13 m-l-20">Address</label><br>
+                                            <label class="f-s-13 m-l-20">Contact</label><br>
+                                            <label class="f-s-13 m-l-20">Email</label>
+                                        </div>
+                                        <div class="col-md-5 custom_column">
+                                            <label class="f-s-13">05-Jan-1995</label><br>
+                                            <label class="f-s-13">Sollins 75023 USA</label><br>
+                                            <label class="f-s-13">+1 234 567 8910</label><br>
+                                            <label class="f-s-13">denzel@sooperdr.com</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 width75">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6>Denzel Washington</h6>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="#" name="edit" class="float-none-mobile float-right">Edit Profile</a>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-md-3 custom_column">
+                                           <img src="assets/images/users/avatar-1.jpg" class="image">
+                                        </div>
+                                        <div class="col-md-4 custom_column">
+                                            <label class="f-s-13 m-l-20">Date of Birth</label><br>
+                                            <label class="f-s-13 m-l-20">Address</label><br>
+                                            <label class="f-s-13 m-l-20">Contact</label><br>
+                                            <label class="f-s-13 m-l-20">Email</label>
+                                        </div>
+                                        <div class="col-md-5 custom_column">
+                                            <label class="f-s-13">05-Jan-1995</label><br>
+                                            <label class="f-s-13">Sollins 75023 USA</label><br>
+                                            <label class="f-s-13">+1 234 567 8910</label><br>
+                                            <label class="f-s-13">denzel@sooperdr.com</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                     <div class="row m-l-75">
+                        <div class="col-lg-4 width75">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6>Denzel Washington</h6>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="#" name="edit" class="float-none-mobile float-right">Edit Profile</a>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-md-3 custom_column">
+                                           <img src="assets/images/users/avatar-1.jpg" class="image">
+                                        </div>
+                                        <div class="col-md-4 custom_column">
+                                            <label class="f-s-13 m-l-20">Date of Birth</label><br>
+                                            <label class="f-s-13 m-l-20">Address</label><br>
+                                            <label class="f-s-13 m-l-20">Contact</label><br>
+                                            <label class="f-s-13 m-l-20">Email</label>
+                                        </div>
+                                        <div class="col-md-5 custom_column">
+                                            <label class="f-s-13">05-Jan-1995</label><br>
+                                            <label class="f-s-13">Sollins 75023 USA</label><br>
+                                            <label class="f-s-13">+1 234 567 8910</label><br>
+                                            <label class="f-s-13">denzel@sooperdr.com</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 width75">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6>Denzel Washington</h6>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="#" name="edit" class="float-none-mobile float-right">Edit Profile</a>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-md-3 custom_column">
+                                           <img src="assets/images/users/avatar-1.jpg" class="image">
+                                        </div>
+                                        <div class="col-md-4 custom_column">
+                                            <label class="f-s-13 m-l-20">Date of Birth</label><br>
+                                            <label class="f-s-13 m-l-20">Address</label><br>
+                                            <label class="f-s-13 m-l-20">Contact</label><br>
+                                            <label class="f-s-13 m-l-20">Email</label>
+                                        </div>
+                                        <div class="col-md-5 custom_column">
+                                            <label class="f-s-13">05-Jan-1995</label><br>
+                                            <label class="f-s-13">Sollins 75023 USA</label><br>
+                                            <label class="f-s-13">+1 234 567 8910</label><br>
+                                            <label class="f-s-13">denzel@sooperdr.com</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 width75">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6>Denzel Washington</h6>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="#" name="edit" class="float-none-mobile float-right">Edit Profile</a>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-md-3 custom_column">
+                                           <img src="assets/images/users/avatar-1.jpg" class="image">
+                                        </div>
+                                        <div class="col-md-4 custom_column">
+                                            <label class="f-s-13 m-l-20">Date of Birth</label><br>
+                                            <label class="f-s-13 m-l-20">Address</label><br>
+                                            <label class="f-s-13 m-l-20">Contact</label><br>
+                                            <label class="f-s-13 m-l-20">Email</label>
+                                        </div>
+                                        <div class="col-md-5 custom_column">
+                                            <label class="f-s-13">05-Jan-1995</label><br>
+                                            <label class="f-s-13">Sollins 75023 USA</label><br>
+                                            <label class="f-s-13">+1 234 567 8910</label><br>
+                                            <label class="f-s-13">denzel@sooperdr.com</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                     <div class="row m-l-75">
+                        <div class="col-lg-4 width75">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6>Denzel Washington</h6>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="#" name="edit" class="float-none-mobile float-right">Edit Profile</a>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-md-3 custom_column">
+                                           <img src="assets/images/users/avatar-1.jpg" class="image">
+                                        </div>
+                                        <div class="col-md-4 custom_column">
+                                            <label class="f-s-13 m-l-20">Date of Birth</label><br>
+                                            <label class="f-s-13 m-l-20">Address</label><br>
+                                            <label class="f-s-13 m-l-20">Contact</label><br>
+                                            <label class="f-s-13 m-l-20">Email</label>
+                                        </div>
+                                        <div class="col-md-5 custom_column">
+                                            <label class="f-s-13">05-Jan-1995</label><br>
+                                            <label class="f-s-13">Sollins 75023 USA</label><br>
+                                            <label class="f-s-13">+1 234 567 8910</label><br>
+                                            <label class="f-s-13">denzel@sooperdr.com</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 width75">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6>Denzel Washington</h6>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="#" name="edit" class="float-none-mobile float-right">Edit Profile</a>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-md-3 custom_column">
+                                           <img src="assets/images/users/avatar-1.jpg" class="image">
+                                        </div>
+                                        <div class="col-md-4 custom_column">
+                                            <label class="f-s-13 m-l-20">Date of Birth</label><br>
+                                            <label class="f-s-13 m-l-20">Address</label><br>
+                                            <label class="f-s-13 m-l-20">Contact</label><br>
+                                            <label class="f-s-13 m-l-20">Email</label>
+                                        </div>
+                                        <div class="col-md-5 custom_column">
+                                            <label class="f-s-13">05-Jan-1995</label><br>
+                                            <label class="f-s-13">Sollins 75023 USA</label><br>
+                                            <label class="f-s-13">+1 234 567 8910</label><br>
+                                            <label class="f-s-13">denzel@sooperdr.com</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 width75">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6>Denzel Washington</h6>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="#" name="edit" class="float-none-mobile float-right">Edit Profile</a>
+                                        </div>
+                                    </div><br>
+                                    <div class="row">
+                                        <div class="col-md-3 custom_column">
+                                           <img src="assets/images/users/avatar-1.jpg" class="image">
+                                        </div>
+                                        <div class="col-md-4 custom_column">
+                                            <label class="f-s-13 m-l-20">Date of Birth</label><br>
+                                            <label class="f-s-13 m-l-20">Address</label><br>
+                                            <label class="f-s-13 m-l-20">Contact</label><br>
+                                            <label class="f-s-13 m-l-20">Email</label>
+                                        </div>
+                                        <div class="col-md-5 custom_column">
+                                            <label class="f-s-13">05-Jan-1995</label><br>
+                                            <label class="f-s-13">Sollins 75023 USA</label><br>
+                                            <label class="f-s-13">+1 234 567 8910</label><br>
+                                            <label class="f-s-13">denzel@sooperdr.com</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div><!--end container-->
+
+                <!--footer section start-->
+                <footer class="footer">
+                    2020 &copy; SooperDr Inc. All Right Reserved.
+                </footer>
+                <!--footer section end-->
+            </div>
+            <!--end body content-->
+        </section>
+
+        <!-- jQuery -->
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery-migrate.js"></script>
+        <!--plugins js-->
+        <script src="assets/plugins/form-wizard/jquery.steps.min.js"></script>
+        <script src="assets/plugins/jquery.validate/jquery.validate.min.js"></script>
+        <script src="assets/pages/jquery.wizard.init.js"></script>
+
+   
+        <!--colorpcker-->
+        <script src="assets/plugins/jquery-multi-select/jquery.quicksearch.js" type="text/javascript"></script>
+        <script src="assets/plugins/bootstrap-select/bootstrap-select.min.js" type="text/javascript"></script>
+        <script src="assets/pages/dashboard-init.js"></script>
+        <!--app js-->
+        <script src="assets/js/jquery.app.js"></script>
+    </body>
+</html>

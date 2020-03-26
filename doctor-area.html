@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Mannat Themes">
+        <meta name="keyword" content="">
+
+        <title>SooperDr | Profile</title>
+
+        <!-- Theme icon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link href="assets/plugins/dropify/css/dropify.min.css" rel="stylesheet">
+
+        <!-- Plugins css-->
+        <link href="assets/plugins/clockpicker/jquery-clockpicker.min.css" rel="stylesheet" />
+        <link href="assets/plugins/timepicker/tempusdominus-bootstrap-4.css" rel="stylesheet" />
+        <link href="assets/plugins/timepicker/bootstrap-material-datetimepicker.css" rel="stylesheet">
+
+        <!--Form Wizard-->
+        <link href="assets/plugins/form-wizard/jquery.steps.css" rel="stylesheet" type="text/css" />
+
+        <link href="assets/plugins/morris-chart/morris.css" rel="stylesheet">
+        <!-- Theme Css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/slidebars.min.css" rel="stylesheet">
+        <link href="assets/css/icons.css" rel="stylesheet">
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <style>
+            .wizard > .steps > ul > li {
+                width: 20%;
+            }
+            .card_image{
+                border-radius: 50%;
+                width: 80px;
+            }
+            .custom_column{
+                padding-right: 5px !important;
+                padding-left: 5px !important;
+            }
+            .f-s-13{
+                font-size: 13px;
+                margin-left: 5px;
+            }
+             .m-l-20{
+                margin-left: 20px;
+            }
+            .heading_color{
+                color: #2e61f2;
+            }
+            .fix{
+                height: 235px;
+            }
+            .timepicker{
+                display: none;
+            }
+            @media only screen and (max-width: 600px) {
+          .side-navigation > li.menu-list > a:after {
+            display: none !important;
+            }
+            }
+            @media screen and (max-width: 1024px){
+            .img-logo{
+            width: 10px;
+            }
+            .hidden-menu{
+            display: none;
+            }
+            .sidebar-open .body-content {
+                margin-left: 60px !important;
+            }
+            }
+        </style>
+
+    </head>
+
+    <body class="sticky-header sidebar-open">
+        <section>
+            <!-- sidebar left start-->
+            <div class="sidebar-left">
+                <div class="sidebar-left-info">
+
+
+                    <!--sidebar nav start-->
+                    <ul class="side-navigation">
+                        <li class="active">
+                            <a href="index.html"><i class="mdi mdi-gauge"></i> <span class="hidden-menu">Dashboard</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-shredder"></i> <span class="hidden-menu">Appointments</span></a>
+                        <ul class="child-list">
+                                <li><a href="appointment-schedule.html"> Schedule</a></li>
+                                <li><a href="appointment-check-in.html"> Checkin</a></li>
+                                <li><a href="appointment-check-out.html"> Checkout</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="profile-dashboard.html"><i class="mdi mdi-fingerprint"></i> <span class="hidden-menu">Profile</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-message-text-outline"></i> <span class="hidden-menu">Message</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-lightbulb-outline"></i> <span class="hidden-menu">Help</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-qrcode"></i> <span class="hidden-menu">Extend my profile</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-email-open-outline"></i> <span class="hidden-menu">Contact</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-heart-box-outline"></i> <span class="hidden-menu">About Sooper Dr</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-tune"></i> <span class="hidden-menu">Our Plans</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-paperclip"></i> <span class="hidden-menu">Terms & Conditions</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-key-plus"></i> <span class="hidden-menu">Privacy Statements</span></a>
+                        </li>
+                        <li class="menu-list"><a href="#"><i class="mdi mdi-flag-outline"></i> <span class="hidden-menu">Careers</span></a>
+                        </li>
+
+                    </ul><!--sidebar nav end-->
+                </div>
+            </div><!-- sidebar left end-->
+
+            <!-- body content start-->
+            <div class="body-content">
+                <!-- header section start-->
+                <div class="header-section">
+                    <!--logo and logo icon start-->
+                    <div class="logo">
+                        <a href="index.html">
+                            <span class="logo-img">
+                                <img src="assets/images/logo.svg" class="img-logo" alt="" height="26">
+                            </span>
+                        </a>
+                    </div>
+
+
+                    <!--toggle button start-->
+                    <a class="toggle-btn"><i class="ti ti-menu"></i></a>
+                    <!--toggle button end-->
+
+                    <!--mega menu start-->
+                    <div id="navbar-collapse-1" class="navbar-collapse collapse mega-menu">
+                        <ul class="nav navbar-nav">
+                             <!-- Classic list -->
+                            <li>
+                                <form class="search-content" action="index.html" method="post">
+                                    <input type="text" class="form-control mt-3" name="keyword" placeholder="Search...">
+                                    <span class="search-button"><i class="ti ti-search"></i></span>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--mega menu end-->
+
+                    <div class="notification-wrap">
+                        <!--right notification start-->
+                        <div class="right-notification">
+                            <ul class="notification-menu">
+                                <li>
+                                    <a href="javascript:;" class="notification" data-toggle="dropdown">
+                                        <i class="mdi mdi-bell-outline"></i>
+                                        <span class="badge badge-success">4</span>
+                                    </a>
+                                    <ul class="dropdown-menu mailbox dropdown-menu-right">
+                                        <li>
+                                          <div class="drop-title">Notifications</div>
+                                        </li>
+                                        <li class="notification-scroll">
+                                            <div class="message-center">
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <i class="ti ti-star"></i>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Jane A. Seward</h6>
+                                                        <span class="mail-desc">Iwon meddle and...</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <i class="ti ti-heart"></i>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Michael W. Salazar</h6>
+                                                        <span class="mail-desc">Lovely gide learn for you...</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <i class="ti ti-image"></i>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>David D. Chen</h6>
+                                                        <span class="mail-desc">Send his new photo...</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <i class="ti ti-bell"></i>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Irma J. Hendren</h6>
+                                                        <span class="mail-desc">6:00 pm our meeting so...</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="text-center bg-light" href="javascript:void(0);">
+                                                <strong>See all notifications</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-settings m-r-5 text-muted"></i></a>
+                                    <ul class="dropdown-menu mailbox dropdown-menu-right">
+                                        <li>
+                                            <div class="drop-title">New Messages 5</div>
+                                        </li>
+                                        <li class="notification-scroll">
+                                            <div class="message-center">
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                         <img src="assets/images/users/avatar-2.jpg" alt="user" class="rounded-circle">
+                                                         <span class="profile-status online pull-right"></span>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Cassie T. Bishop</h6>
+                                                        <span class="mail-desc">Just see the my admin!</span>
+                                                        <span class="time">9:30 AM</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <img src="assets/images/users/avatar-3.jpg" alt="user" class="rounded-circle">
+                                                        <span class="profile-status busy pull-right"></span>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Rudy A. Scott</h6>
+                                                        <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <img src="assets/images/users/avatar-4.jpg" alt="user" class="rounded-circle">
+                                                        <span class="profile-status away pull-right"></span>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Kevin D. Jernigan</h6>
+                                                        <span class="mail-desc">I am a singer!</span>
+                                                        <span class="time">9:08 AM</span>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="user-img">
+                                                        <img src="assets/images/users/avatar-5.jpg" alt="user" class="rounded-circle">
+                                                        <span class="profile-status offline pull-right"></span>
+                                                    </div>
+                                                    <div class="mail-contnet">
+                                                        <h6>Jane A. Seward</h6>
+                                                        <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="text-center bg-light" href="javascript:void(0);"> <strong>See all notifications</strong> </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="javascript:;" data-toggle="dropdown">
+                                        <img src="assets/images/users/avatar-1.jpg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right profile-menu">
+                                        <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle m-r-5 text-muted"></i> My Profile</a>
+                                        <a class="dropdown-item" href="#"><i class="mdi mdi-logout m-r-5 text-muted"></i> Logout</a>
+                                    </div>
+
+                                </li>
+
+                            </ul>
+                        </div><!--right notification end-->
+                    </div>
+                </div>
+                <!-- header section end-->
+
+                <div class="container-fluid">
+                    <div class="page-head">
+                        <h4 class="mt-2 mb-2">DOCTOR AREA > PATIENT BOARD</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <div class="wizard">
+                                        <h2>Patient Information</h2>
+                                        <section class="mt-3 ml-2 align-items-center">
+                                            <div class="row">
+                                                <div class="col-md-1">
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <div class="card m-b-30 fix">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <h6 class="heading_color">PATIENT DETAILS</h6>
+                                                                </div>
+                                                            </div><br>
+                                                            <div class="row">
+                                                                <div class="col-md-3 custom_column">
+                                                                   <img src="assets/images/users/avatar-1.jpg" class="card_image">
+                                                                </div>
+                                                                <div class="col-md-4 custom_column">
+                                                                    <label class="f-s-13 m-l-20">Name</label><br>
+                                                                    <label class="f-s-13 m-l-20">Patient ID</label><br>
+                                                                    <label class="f-s-13 m-l-20">Patient ID</label><br>
+                                                                    <label class="f-s-13 m-l-20">Address</label><br>
+                                                                    <label class="f-s-13 m-l-20">Contact</label><br>
+                                                                </div>
+                                                                <div class="col-md-5 custom_column">
+                                                                    <label class="f-s-13">Pankaj Laljani</label><br>
+                                                                    <label class="f-s-13">78</label><br>
+                                                                    <label class="f-s-13">05-Jan-1995</label><br>
+                                                                    <label class="f-s-13">Sollins 75023 USA</label><br>
+                                                                    <label class="f-s-13">+1 234 567 8910</label><br>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <div class="card m-b-30 fix">
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <h6 class="heading_color">MEDICAL HISTORY</h6>
+                                                                </div>
+                                                            </div><br>
+                                                            <div class="row">
+                                                                <div class="col-md-3 custom_column">
+                                                                    <label class="f-s-13 m-l-20">Cancer</label><br>
+                                                                    <label class="f-s-13 m-l-20">Diabetes</label><br>
+                                                                    <label class="f-s-13 m-l-20">Stone</label><br>
+                                                                    <label class="f-s-13 m-l-20">Migrane</label>
+                                                                </div>
+                                                                <div class="col-md-3 custom_column">
+                                                                    <label class="f-s-13">2 Years</label><br>
+                                                                    <label class="f-s-13">Currently</label><br>
+                                                                    <label class="f-s-13">From 2001-2007</label><br>
+                                                                    <label class="f-s-13">Once a month usually</label>
+                                                                </div>
+                                                                <div class="col-md-6 custom_column">
+                                                                    <label class="f-s-13">Treated at memorial hospital</label><br>
+                                                                    <label class="f-s-13">Medication twice a week</label><br>
+                                                                    <label class="f-s-13">Operated at t. John Hospital</label><br>
+                                                                    <label class="f-s-13">Medication when occur</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-1">
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-1">
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                        <div class="card m-b-30">
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <h6 class="heading_color">BODY STATS</h6>
+                                                                    </div>
+                                                                </div><br>
+                                                                <div class="row">
+                                                                    <div class="col-md-4">
+                                                                        <label class="f-s-13">Height</label><br>
+                                                                        <label class="f-s-13">Weight</label><br>
+                                                                        <label class="f-s-13">Gender</label><br>
+                                                                    </div>
+                                                                    <div class="col-md-8">
+                                                                        <label class="f-s-13">5 feet 11 inches</label><br>
+                                                                        <label class="f-s-13">150 lbs</label><br>
+                                                                        <label class="f-s-13">Male</label><br>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card m-b-30">
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <h6 class="heading_color">APPETITE HABIT</h6>
+                                                                    </div>
+                                                                </div><br>
+                                                                <div class="row">
+                                                                    <div class="col-md-4">
+                                                                        <label class="f-s-13">Alcohol</label><br>
+                                                                        <label class="f-s-13">Caffeine</label><br>
+                                                                        <label class="f-s-13">Diet</label><br>
+                                                                    </div>
+                                                                    <div class="col-md-8">
+                                                                        <label class="f-s-13">2 Pints per week</label><br>
+                                                                        <label class="f-s-13">Daily 4 cups</label><br>
+                                                                        <label class="f-s-13">Alcohol intake</label><br>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="card m-b-30">
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <h6 class="heading_color">INSTRUCTION</h6>
+                                                                    </div>
+                                                                </div><br>
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <label class="f-s-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</label><br>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </section>
+
+                                        <h2>Diagnosis Details</h2>
+                                        <section class="mt-3 ml-2">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                    <h6 class="heading_color">CREATE A MEDICAL RECORD</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+
+                                                    <div class="col-md-6">
+                                                        <input  type="text" class="form-control" placeholder="Presenting Complain">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4">
+                                                            <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                            </div>
+                                        </div><br>
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <input  type="text" class="form-control" placeholder="Height in cms">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input  type="text" class="form-control" placeholder="Weight in Kgs">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input  type="text" class="form-control" placeholder="Blood Pressure">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><br>
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <textarea class="form-control" rows="3">Symptoms observed</textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><br>
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <textarea class="form-control" rows="3">Treatment given</textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><br><br>
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="row">
+
+                                                    <div class="col-md-12 text-center">
+                                                        <button type="button" class="btn btn-primary">SUBMIT RECORD</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        </section>
+
+                                        <h2>Prescription Given</h2>
+                                        <section class="mt-3 ml-2">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                    <h6 class="heading_color">PRESCRIPTION DETAILS</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <input  type="text" class="form-control" placeholder="Medicine name along with dose">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input  type="text" class="form-control" placeholder="Strength ( mg / tbsp / ml )">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                            </div>
+                                        </div><br>
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <label style="margin-top: 15px;">Choose intake frequency type:</label>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <select class="form-control">
+                                                            <option>Hourly Based</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input  type="text" class="form-control" placeholder="After Every 4 Hour">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><br>
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4">
+                                                            <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4">
+                                                            <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                                    
+
+                                        <h2>Lab Tests</h2>
+                                        <section class="mt-3 ml-2">
+                                       	    <div class="row nested-col col-sm-6 text-center mx-auto">
+                                        	<div class="form-group row col-xl-12 col-sm-8">
+                                                <label class="col-lg-12 control-label "><strong>Medication:</strong> Please list any medication you are talking with dose and frequency</label>
+                                        	</div>
+                                        	</div>
+                                            <div class="row nested-col col-sm-6 text-center mx-auto">
+                                             <div class="form-group row col-xl-12 col-sm-8">
+                                                <div class="col-sm-6">
+                                                    <input id="text" name="weight" type="text" class="form-control" placeholder="Drugs">
+                                            </div>
+                                                <div class="col-sm-6">
+                                                    <input id="text" name="blood" type="text" class="form-control" placeholder="Dose/Frequency">
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="row nested-col col-sm-6 text-center mx-auto">
+                                             <div class="form-group row col-xl-12 col-sm-8">
+                                                <div class="col-sm-6">
+                                                    <input id="text" name="weight" type="text" class="form-control" placeholder="Drugs">
+                                            </div>
+                                                <div class="col-sm-6">
+                                                    <input id="text" name="blood" type="text" class="form-control" placeholder="Dose/Frequency">
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="row nested-col col-sm-6 text-center mx-auto">
+                                             <div class="form-group row col-xl-12 col-sm-8">
+                                                <div class="col-sm-6">
+                                                    <input id="text" name="weight" type="text" class="form-control" placeholder="Drugs">
+                                            </div>
+                                                <div class="col-sm-5">
+                                                    <input id="text" name="blood" type="text" class="form-control" placeholder="Dose/Frequency">
+                                            </div>
+                                            <div class="col-sm-1" style="padding: 0px; margin-left: -9px;">
+                                              <button type="button" class="btn btn-outline-primary" style="padding: 12px 16px;"><i class="fa fa-plus"></i></button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </section>
+
+                                        <h2>Any Special Remarks</h2>
+                                        <section class="mt-3 ml-2">
+                                             <div class="row nested-col col-sm-6 mx-auto">
+                                             <div class="form-group row col-xl-12 col-sm-8">
+                                            <label class="col-sm-4 control-label mt-3">Do patient drink alcohol?</label>
+                                        	<div class="col-sm-3">
+                                                    <div class="form-check-inline my-1">
+                                                        <label class="cr-styled" for="example-radio21">
+                                                            <input type="radio" id="example-radio21" name="example-radios1" value="option1">
+                                                            <i class="fa"></i>
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check-inline my-1">
+                                                        <label class="cr-styled" for="example-radio22">
+                                                            <input type="radio" id="example-radio22" name="example-radios1" value="option2">
+                                                            <i class="fa"></i>
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            <div class="col-sm-5">
+                                            <div class="form-check-inline my-1 col-sm-12">
+                                                    <input id="text" name="weight" type="text" class="form-control" placeholder="If yes, how much per week?">
+                                            </div>
+                                            </div>
+
+                                            </div>
+                                        	</div>
+                                        	<div class="row nested-col col-sm-6 mx-auto">
+                                             <div class="form-group row col-xl-12 col-sm-8">
+                                            <label class="col-sm-4 control-label mt-3">Do patient smoke?</label>
+                                        	<div class="col-sm-3">
+                                                    <div class="form-check-inline my-1">
+                                                        <label class="cr-styled" for="example-radio23">
+                                                            <input type="radio" id="example-radio23" name="example-radios1" value="option1">
+                                                            <i class="fa"></i>
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check-inline my-1">
+                                                        <label class="cr-styled" for="example-radio24">
+                                                            <input type="radio" id="example-radio24" name="example-radios1" value="option2">
+                                                            <i class="fa"></i>
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            <div class="col-sm-5">
+                                            <div class="form-check-inline my-1 col-sm-12">
+                                                    <input id="text" name="weight" type="text" class="form-control" placeholder="If yes, how many per day?">
+                                            </div>
+                                            </div>
+
+                                            </div>
+                                        	</div>
+                                        	<div class="row nested-col col-sm-6 mx-auto">
+                                             <div class="form-group row col-xl-12 col-sm-8">
+                                            <label class="col-sm-4 control-label mt-3">Do patient consume caffeine?</label>
+                                        	<div class="col-sm-3">
+                                                    <div class="form-check-inline my-1">
+                                                        <label class="cr-styled" for="example-radio25">
+                                                            <input type="radio" id="example-radio25" name="example-radios1" value="option1">
+                                                            <i class="fa"></i>
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check-inline my-1">
+                                                        <label class="cr-styled" for="example-radio26">
+                                                            <input type="radio" id="example-radio26" name="example-radios1" value="option2">
+                                                            <i class="fa"></i>
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            <div class="col-sm-5">
+                                            <div class="form-check-inline my-1 col-sm-12">
+                                                    <input id="text" name="weight" type="text" class="form-control" placeholder="If yes, how many cups per week?">
+                                            </div>
+                                            </div>
+
+                                            </div>
+                                        	</div>
+                                        	<div class="row nested-col col-sm-6 mx-auto">
+                                             <div class="form-group row col-xl-12 col-sm-8">
+                                            <label class="col-sm-4 control-label mt-3">Do patient use drugs?</label>
+                                        	<div class="col-sm-3">
+                                                    <div class="form-check-inline my-1">
+                                                        <label class="cr-styled" for="example-radio27">
+                                                            <input type="radio" id="example-radio27" name="example-radios1" value="option1">
+                                                            <i class="fa"></i>
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check-inline my-1">
+                                                        <label class="cr-styled" for="example-radio28">
+                                                            <input type="radio" id="example-radio28" name="example-radios1" value="option2">
+                                                            <i class="fa"></i>
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            <div class="col-sm-5">
+                                            <div class="form-check-inline my-1 col-sm-12">
+                                                    <input id="text" name="weight" type="text" class="form-control" placeholder="If yes, what type and frequency?">
+                                            </div>
+                                            </div>
+
+                                            </div>
+                                        	</div>
+                                        	<div class="row nested-col col-sm-6 mx-auto">
+                                             <div class="form-group row col-xl-12 col-sm-8">
+                                            <label class="col-sm-4 control-label mt-3">Do patient on a special diet?</label>
+                                        	<div class="col-sm-3">
+                                                    <div class="form-check-inline my-1">
+                                                        <label class="cr-styled" for="example-radio29">
+                                                            <input type="radio" id="example-radio29" name="example-radios1" value="option1">
+                                                            <i class="fa"></i>
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check-inline my-1">
+                                                        <label class="cr-styled" for="example-radio30">
+                                                            <input type="radio" id="example-radio30" name="example-radios1" value="option2">
+                                                            <i class="fa"></i>
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            <div class="col-sm-5">
+                                            <div class="form-check-inline my-1 col-sm-12">
+                                                    <input id="text" name="weight" type="text" class="form-control" placeholder="If yes, please describe?">
+                                            </div>
+                                            </div>
+
+                                            </div>
+                                        	</div>
+                                        </section>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--END ROW-->
+
+                </div><!--end container-->
+
+                <!--footer section start-->
+                <footer class="footer">
+                    2020 &copy; SooperDr Inc. All Right Reserved.
+                </footer>
+                <!--footer section end-->
+            </div>
+            <!--end body content-->
+        </section>
+
+        <!-- jQuery -->
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery-migrate.js"></script>
+        <script src="assets/js/modernizr.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.min.js"></script>
+        <script src="assets/js/slidebars.min.js"></script>
+
+        <!--plugins js-->
+        <script src="assets/plugins/counter/jquery.counterup.min.js"></script>
+        <script src="assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+        <script src="assets/plugins/sparkline-chart/jquery.sparkline.min.js"></script>
+        <script src="assets/pages/jquery.sparkline.init.js"></script>
+
+        <script src="assets/plugins/form-wizard/jquery.steps.min.js"></script>
+        <script src="assets/plugins/jquery.validate/jquery.validate.min.js"></script>
+        <script src="assets/pages/jquery.wizard.init.js"></script>
+
+        <script src="assets/plugins/timepicker/moment.js"></script>
+        <script src="assets/plugins/clockpicker/jquery-clockpicker.min.js"></script>
+        <script src="assets/plugins/timepicker/tempusdominus-bootstrap-4.js"></script>
+        <script src="assets/plugins/timepicker/bootstrap-material-datetimepicker.js"></script>
+        <!--colorpcker-->
+
+        <script src="assets/plugins/jquery-multi-select/jquery.multi-select.js" type="text/javascript"></script>
+        <script src="assets/plugins/jquery-multi-select/jquery.quicksearch.js" type="text/javascript"></script>
+        <script src="assets/plugins/bootstrap-inputmask/bootstrap-inputmask.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/bootstrap-select/bootstrap-select.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/spinner/spinner.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/select2/select2.min.js" type="text/javascript"></script>
+        <script src="assets/pages/jquery.form-advance.init.js" type="text/javascript"></script>
+
+        <script src="assets/plugins/chart-js/Chart.bundle.js"></script>
+        <script src="assets/plugins/morris-chart/raphael-min.js"></script>
+        <script src="assets/plugins/morris-chart/morris.js"></script>
+        <script src="assets/pages/dashboard-init.js"></script>
+
+        <script src="assets/plugins/dropify/js/dropify.min.js"></script>
+
+
+        <!--app js-->
+        <script src="assets/js/jquery.app.js"></script>
+        <script>
+            jQuery(document).ready(function($) {
+                $('.counter').counterUp({
+                delay: 100,
+                time: 1200
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                // Basic
+                $('.dropify').dropify();
+
+                // Translated
+                $('.dropify-fr').dropify({
+                    messages: {
+                        default: 'Glissez-déposez un fichier ici ou cliquez',
+                        replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+                        remove:  'Supprimer',
+                        error:   'Désolé, le fichier trop volumineux'
+                    }
+                });
+
+                // Used events
+                var drEvent = $('#input-file-events').dropify();
+
+                drEvent.on('dropify.beforeClear', function(event, element){
+                    return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
+                });
+
+                drEvent.on('dropify.afterClear', function(event, element){
+                    alert('File deleted');
+                });
+
+                drEvent.on('dropify.errors', function(event, element){
+                    console.log('Has Errors');
+                });
+
+                var drDestroy = $('#input-file-to-destroy').dropify();
+                drDestroy = drDestroy.data('dropify')
+                $('#toggleDropify').on('click', function(e){
+                    e.preventDefault();
+                    if (drDestroy.isDropified()) {
+                        drDestroy.destroy();
+                    } else {
+                        drDestroy.init();
+                    }
+                })
+            });
+        </script>
+    </body>
+</html>
