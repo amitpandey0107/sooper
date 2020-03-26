@@ -34,6 +34,7 @@
 * 22.Login-Error
 * 23.Footer-Content
 * 24.Responsive
+* 25.Doctor Profile
 * ===============================
 */
 
@@ -2719,4 +2720,38 @@ ul.p-social-link li a {
         width: 100%;
         display: block;
     }
+}
+
+
+
+/*------------------------
+    24.Doctor Profile
+-------------------------*/
+#doctorProfile {
+    position: relative;
+}
+#doctorProfile .page-head h4 {    
+    color: #2e61f2;
+}
+#doctorProfile .card-body h6 {
+    text-transform: uppercase;
+    color: #2e61f2;
+    font-size: 14px;
+    font-weight: 600;
+}
+#doctorProfile .card-body .image {
+    border-radius: 50%;
+    width: 70px;
+}
+#doctorProfile .m-l-20 {
+    margin-left: 0;
+}
+#doctorProfile .custom_column label.lbltitle {
+    color: gray;
+}
+#doctorProfile label {
+    margin: 0 0 3px 0;
+}
+#doctorProfile .greyCard {
+    background-color: #ADAFCD;
 }
