@@ -1223,9 +1223,16 @@ a.add-btn {
 .sidebar-collapsed .logo-img img {
   width: 100%;
 }
+.mobilelogo {
+  display: none;
+}
 @media only screen and (max-width:1024px) {
-  .logo-img img {
-    width: 100%;
+  .mobilelogo {
+      height: 40px;
+      display: inline-block;
+  }
+  .desktoplogo {
+    display: none;
   }
   .sidebar-left {
       display: block;

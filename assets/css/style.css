@@ -2825,6 +2825,7 @@ ul.p-social-link li a {
     top: 0;
     right: 5px;
 }
+
 @media only screen and (max-width:1024px) {
    .delModal .modal-content {
        width: 65%;
