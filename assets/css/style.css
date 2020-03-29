@@ -2944,3 +2944,24 @@ ul.p-social-link li a {
     text-align: left;
     display: block !important;
 }
+
+.edication .form-control {
+    padding: .375rem 3px;
+}
+@media only screen and (max-width:771px) {
+    .cust_row {
+        width: 94%;
+    }
+    .edication .form-control {
+        padding: .375rem .75rem;
+    }
+}
+.additinfo label {
+    text-align: left;   
+    padding-left: 0;
+}
+@media (max-width: 768px) {
+    .wizard > .steps > ul > li {
+        width: 50% !important;
+    }
+}

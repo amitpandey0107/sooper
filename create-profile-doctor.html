@@ -53,52 +53,122 @@
             margin-left: 60px !important;
         }
         }
+
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 30%;
+            margin-top: 230px;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .btn-model {
+            font-size: 12px;
+            border-radius: 20px;
+        }
+
+        .hide-mobile {
+            display: none;
+        }
         </style>
     </head>
 
      <body class="sticky-header sidebar-open">
         <section>
-            <!-- sidebar left start-->
-            <div class="sidebar-left">
-                <div class="sidebar-left-info">
+             <!-- sidebar left start-->
+        <div class="sidebar-left">
+            <div class="sidebar-left-info">
 
 
-                    <!--sidebar nav start-->
-                    <ul class="side-navigation">
-                         <li class="active">
-                            <a href="index.html"><i class="mdi mdi-gauge"></i> <span class="hidden-menu">Dashboard</span></a>
-                        </li>
-                        <li class="menu-list"><a href="#"><i class="mdi mdi-shredder"></i> <span class="hidden-menu">Appointments</span></a>
+                <!--sidebar nav start-->
+                <ul class="side-navigation">
+                    <li class="active">
+                        <a href="index.html"><i class="mdi mdi-gauge"></i> <span
+                                class="hidden-menu">Dashboard</span></a>
+                    </li>
+                    <li class="menu-list"><a href="#"><i class="mdi mdi-shredder"></i> <span
+                                class="hidden-menu">Appointments</span></a>
                         <ul class="child-list">
-                                <li><a href="appointment-schedule.html"> Schedule</a></li>
-                                <li><a href="appointment-check-in.html"> Checkin</a></li>
-                                <li><a href="appointment-check-out.html"> Checkout</a></li>
+                            <li><a href="appointment-schedule.html"> Schedule</a></li>
+                            <li><a href="appointment-check-in.html"> Checkin</a></li>
+                            <li><a href="appointment-check-out.html"> Checkout</a></li>
                         </ul>
-                        </li>
-                        <li><a href="profile-dashboard.html"><i class="mdi mdi-fingerprint"></i> <span class="hidden-menu">Profile</span></a>
-                        </li>
-                        <li class="menu-list"><a href="#"><i class="mdi mdi-message-text-outline"></i> <span class="hidden-menu">Message</span></a>
-                        </li>
-                        <li class="menu-list"><a href="#"><i class="mdi mdi-lightbulb-outline"></i> <span class="hidden-menu">Help</span></a>
-                        </li>
-                        <li class="menu-list"><a href="#"><i class="mdi mdi-qrcode"></i> <span class="hidden-menu">Extend my profile</span></a>
-                        </li>
-                        <li class="menu-list"><a href="#"><i class="mdi mdi-email-open-outline"></i> <span class="hidden-menu">Contact</span></a>
-                        </li>
-                        <li class="menu-list"><a href="#"><i class="mdi mdi-heart-box-outline"></i> <span class="hidden-menu">About Sooper Dr</span></a>
-                        </li>
-                        <li class="menu-list"><a href="#"><i class="mdi mdi-tune"></i> <span class="hidden-menu">Our Plans</span></a>
-                        </li>
-                        <li class="menu-list"><a href="#"><i class="mdi mdi-paperclip"></i> <span class="hidden-menu">Terms & Conditions</span></a>
-                        </li>
-                        <li class="menu-list"><a href="#"><i class="mdi mdi-key-plus"></i> <span class="hidden-menu">Privacy Statements</span></a>
-                        </li>
-                        <li class="menu-list"><a href="#"><i class="mdi mdi-flag-outline"></i> <span class="hidden-menu">Careers</span></a>
-                        </li>
+                    </li>
+                    <li><a href="profile-dashboard.html"><i class="mdi mdi-fingerprint"></i> <span
+                                class="hidden-menu">Profile</span></a>
+                    </li>
+                    <li class="menu-list"><a href="#"><i class="mdi mdi-message-text-outline"></i> <span
+                                class="hidden-menu">Message</span></a>
+                    </li>
+                    <li class="menu-list"><a href="#"><i class="mdi mdi-lightbulb-outline"></i> <span
+                                class="hidden-menu">Help</span></a>
+                    </li>
+                    <li class="menu-list"><a href="#"><i class="mdi mdi-qrcode"></i> <span class="hidden-menu">Extend my
+                                profile</span></a>
+                    </li>
+                    <li class="menu-list"><a href="#"><i class="mdi mdi-email-open-outline"></i> <span
+                                class="hidden-menu">Contact</span></a>
+                    </li>
+                    <li class="menu-list"><a href="#"><i class="mdi mdi-heart-box-outline"></i> <span
+                                class="hidden-menu">About Sooper Dr</span></a>
+                    </li>
+                    <li class="menu-list"><a href="#"><i class="mdi mdi-tune"></i> <span class="hidden-menu">Our
+                                Plans</span></a>
+                    </li>
+                    <li class="menu-list"><a href="#"><i class="mdi mdi-paperclip"></i> <span class="hidden-menu">Terms
+                                & Conditions</span></a>
+                    </li>
+                    <li class="menu-list"><a href="#"><i class="mdi mdi-key-plus"></i> <span class="hidden-menu">Privacy
+                                Statements</span></a>
+                    </li>
+                    <li class="menu-list"><a href="#"><i class="mdi mdi-flag-outline"></i> <span
+                                class="hidden-menu">Careers</span></a>
+                    </li>
 
-                    </ul><!--sidebar nav end-->
-                </div>
-            </div><!-- sidebar left end-->
+                </ul>
+                <!--sidebar nav end-->
+            </div>
+        </div><!-- sidebar left end-->
 
             <!-- body content start-->
             <div class="body-content">
@@ -108,7 +178,9 @@
                     <div class="logo">
                         <a href="index.html">
                             <span class="logo-img">
-                                <img src="assets/images/logo.svg" class="img-logo" alt="" height="26">
+                                <img src="assets/images/post/logo_small.png" class="mobilelogo" alt="" height="45">
+                                <img src="assets/images/logo.svg" class="img-logo hide-box desktoplogo" alt="" height="26">
+    
                             </span>
                         </a>
                     </div>
@@ -276,366 +348,527 @@
                             <div class="card m-b-30">
                                 <div class="card-body">
                                     <div class="wizard">
+
+                                        <!-- ======== PERSONAL INFORMATION ============= -->
                                         <h2>Personal Info</h2>
-                                        <section class="mt-3 ml-2 align-items-center">
-                                            <div class="form-group row col-lg-5 col-sm-8 mx-auto">
-                                                    <input id="name" name="name" type="text" class="required form-control "placeholder="First Name">
-                                            </div>
-                                            <div class="form-group row col-lg-5 col-sm-8 mx-auto">
-                                                    <input id="surname" name="surname" type="text" class="required form-control" placeholder="Last Name">
-                                            </div>
-                                            <div class="form-group row col-lg-5 col-sm-8 mx-auto">
-                                            <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
-                                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" placeholder="Date Of Birth"/>
-                                                <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
-                                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                        <section class="mt-3 ml-2 align-items-center text-center">
+                                            <div class="row cust_row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group">
+                                                        <input id="name" name="name" type="text" class="required form-control "
+                                                        placeholder="First Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group">
+                                                        <input id="surname" name="surname" type="text"
+                                                        class="required form-control" placeholder="Last Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group">
+                                                        <div class="input-group date" id="datetimepicker4"
+                                                        data-target-input="nearest">
+                                                        <input type="text" class="form-control datetimepicker-input"
+                                                            data-target="#datetimepicker4" placeholder="Date Of Birth" />
+                                                        <div class="input-group-append" data-target="#datetimepicker4"
+                                                            data-toggle="datetimepicker">
+                                                            <div class="input-group-text"><i class="fa fa-calendar"></i>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <input type="file" id="input-file-now"
+                                                        placeholder="Drag or Upload Profile Picture" class="dropify" />
                                                 </div>
                                             </div>
-                                        </div>
-                            			<div class="form-group row col-xl-5 col-sm-8 mx-auto">
-                                        		<input type="file" id="input-file-now" placeholder="Drag or Upload Profile Picture" class="dropify" />
-                            			</div>
-                                        </section>
+                                            
+                                        </section>  
 
+
+                                        <!-- ======== CONTACT DETAILS ============= -->
                                         <h2>Contact Details</h2>
-                                        <section class="mt-3 ml-2">
-                                        <div class="row nested-col col-sm-6 text-center mx-auto">
-                                            <div class="form-group row col-xl-6 col-sm-8 mx-auto">
-                                                    <input id="address" name="address" type="text" class="form-control" placeholder="Address Line 1">
+                                        <section class="mt-3 ml-2 align-items-center text-center">
+                                            <div class="row cust_row">
+                                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <input id="address" name="address" type="text" class="form-control"  placeholder="Address Line 1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <input id="address" name="address1" type="text" class="form-control" placeholder="Address Line 2">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                                    <div class="form-group">
+                                                        <input id="city" name="City" type="text" class="form-control"
+                                                        placeholder="City">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                                    <div class="form-group">
+                                                        <select class="select2 form-control custom-select">
+                                                            <option>State</option>
+                                                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                                <option value="AK">Alaska</option>
+                                                                <option value="HI">Hawaii</option>
+                                                            </optgroup>
+                                                            <optgroup label="Pacific Time Zone">
+                                                                <option value="CA">California</option>
+                                                                <option value="NV">Nevada</option>
+                                                                <option value="OR">Oregon</option>
+                                                                <option value="WA">Washington</option>
+                                                            </optgroup>
+                                                            <optgroup label="Mountain Time Zone">
+                                                                <option value="AZ">Arizona</option>
+                                                                <option value="CO">Colorado</option>
+                                                                <option value="ID">Idaho</option>
+                                                                <option value="MT">Montana</option>
+                                                                <option value="NE">Nebraska</option>
+                                                                <option value="NM">New Mexico</option>
+                                                                <option value="ND">North Dakota</option>
+                                                                <option value="UT">Utah</option>
+                                                                <option value="WY">Wyoming</option>
+                                                            </optgroup>
+                                                            <optgroup label="Central Time Zone">
+                                                                <option value="AL">Alabama</option>
+                                                                <option value="AR">Arkansas</option>
+                                                                <option value="IL">Illinois</option>
+                                                                <option value="IA">Iowa</option>
+                                                                <option value="KS">Kansas</option>
+                                                                <option value="KY">Kentucky</option>
+                                                                <option value="LA">Louisiana</option>
+                                                                <option value="MN">Minnesota</option>
+                                                                <option value="MS">Mississippi</option>
+                                                                <option value="MO">Missouri</option>
+                                                                <option value="OK">Oklahoma</option>
+                                                                <option value="SD">South Dakota</option>
+                                                                <option value="TX">Texas</option>
+                                                                <option value="TN">Tennessee</option>
+                                                                <option value="WI">Wisconsin</option>
+                                                            </optgroup>
+                                                            <optgroup label="Eastern Time Zone">
+                                                                <option value="CT">Connecticut</option>
+                                                                <option value="DE">Delaware</option>
+                                                                <option value="FL">Florida</option>
+                                                                <option value="GA">Georgia</option>
+                                                                <option value="IN">Indiana</option>
+                                                                <option value="ME">Maine</option>
+                                                                <option value="MD">Maryland</option>
+                                                                <option value="MA">Massachusetts</option>
+                                                                <option value="MI">Michigan</option>
+                                                                <option value="NH">New Hampshire</option>
+                                                                <option value="NJ">New Jersey</option>
+                                                                <option value="NY">New York</option>
+                                                                <option value="NC">North Carolina</option>
+                                                                <option value="OH">Ohio</option>
+                                                                <option value="PA">Pennsylvania</option>
+                                                                <option value="RI">Rhode Island</option>
+                                                                <option value="SC">South Carolina</option>
+                                                                <option value="VT">Vermont</option>
+                                                                <option value="VA">Virginia</option>
+                                                                <option value="WV">West Virginia</option>
+                                                            </optgroup>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                                    <div class="form-group">
+                                                        <input id="zipcode" name="zip" type="text" class="form-control"
+                                                        placeholder="Zip">
+                                                    </div>
+                                                </div>
+    
+                                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <input class="form-control" type="tel" id="example-tel-input"
+                                                        placeholder="Contact Number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <input id="email" name="email" type="text"
+                                                        class="required email form-control" placeholder="Email Address">
+                                                    </div>
+                                                </div>
+    
                                             </div>
-                                            <div class="form-group row col-xl-6 col-sm-8 mx-auto">
-                                                    <input id="address" name="address1" type="text" class="form-control" placeholder="Address Line 2">
-                                            </div>
-                                        </div>
-
-                                        <div class="row nested-col col-sm-6 text-center mx-auto">
-                                        <div class="form-group row col-xl-4 col-sm-8 mx-auto">
-                                                    <input id="city" name="City" type="text" class="form-control" placeholder="City">
-                                        </div>
-                                        <div class="form-group row col-xl-4 col-sm-8 mx-auto">
-                                        <select class="select2 form-control custom-select">
-                                        <option>State</option>
-                                        <optgroup label="Alaskan/Hawaiian Time Zone">
-                                            <option value="AK">Alaska</option>
-                                            <option value="HI">Hawaii</option>
-                                        </optgroup>
-                                        <optgroup label="Pacific Time Zone">
-                                            <option value="CA">California</option>
-                                            <option value="NV">Nevada</option>
-                                            <option value="OR">Oregon</option>
-                                            <option value="WA">Washington</option>
-                                        </optgroup>
-                                        <optgroup label="Mountain Time Zone">
-                                            <option value="AZ">Arizona</option>
-                                            <option value="CO">Colorado</option>
-                                            <option value="ID">Idaho</option>
-                                            <option value="MT">Montana</option>
-                                            <option value="NE">Nebraska</option>
-                                            <option value="NM">New Mexico</option>
-                                            <option value="ND">North Dakota</option>
-                                            <option value="UT">Utah</option>
-                                            <option value="WY">Wyoming</option>
-                                        </optgroup>
-                                        <optgroup label="Central Time Zone">
-                                            <option value="AL">Alabama</option>
-                                            <option value="AR">Arkansas</option>
-                                            <option value="IL">Illinois</option>
-                                            <option value="IA">Iowa</option>
-                                            <option value="KS">Kansas</option>
-                                            <option value="KY">Kentucky</option>
-                                            <option value="LA">Louisiana</option>
-                                            <option value="MN">Minnesota</option>
-                                            <option value="MS">Mississippi</option>
-                                            <option value="MO">Missouri</option>
-                                            <option value="OK">Oklahoma</option>
-                                            <option value="SD">South Dakota</option>
-                                            <option value="TX">Texas</option>
-                                            <option value="TN">Tennessee</option>
-                                            <option value="WI">Wisconsin</option>
-                                        </optgroup>
-                                        <optgroup label="Eastern Time Zone">
-                                            <option value="CT">Connecticut</option>
-                                            <option value="DE">Delaware</option>
-                                            <option value="FL">Florida</option>
-                                            <option value="GA">Georgia</option>
-                                            <option value="IN">Indiana</option>
-                                            <option value="ME">Maine</option>
-                                            <option value="MD">Maryland</option>
-                                            <option value="MA">Massachusetts</option>
-                                            <option value="MI">Michigan</option>
-                                            <option value="NH">New Hampshire</option>
-                                            <option value="NJ">New Jersey</option>
-                                            <option value="NY">New York</option>
-                                            <option value="NC">North Carolina</option>
-                                            <option value="OH">Ohio</option>
-                                            <option value="PA">Pennsylvania</option>
-                                            <option value="RI">Rhode Island</option>
-                                            <option value="SC">South Carolina</option>
-                                            <option value="VT">Vermont</option>
-                                            <option value="VA">Virginia</option>
-                                            <option value="WV">West Virginia</option>
-                                        </optgroup>
-                                    </select>
-                                    </div>
-                                    <div class="form-group row col-xl-4 col-sm-8 mx-auto">
-                                                    <input id="zipcode" name="zip" type="text" class="form-control" placeholder="Zip">
-                                    </div>
-                                    </div>
-                                    <div class="row nested-col col-sm-6 text-center mx-auto">
-                                    		<div class="form-group row col-xl-6 col-sm-8 mx-auto">
-                                                    <input class="form-control" type="tel" id="example-tel-input" placeholder="Contact Number">
-                                            </div>
-                                            <div class="form-group row col-xl-6 col-sm-8 mx-auto">
-                                                    <input id="email" name="email" type="text" class="required email form-control" placeholder="Email Address">
-                                            </div>
-                                    </div>
                                         </section>
 
+
+                                        <!-- ======== SPECIALITY ============= -->
                                         <h2>Speciality</h2>
-                                        <section class="mt-3 ml-2">
-                                           
-                                            <div class="row nested-col col-sm-6 text-center mx-auto">
-                                                <div class="form-group row col-xl-12 col-sm-8">
-                                                <div class="col-sm-6">
-                                                    <select class="select2 form-control custom-select" name="doctor_type">
-                                                        <option>Cardiologist</option>
-                                                        <option>Pediatrician</option>
-                                                        <option>Surgeon</option>
-                                                        <option>Psychiatrist</option>
-                                                        <option>Dermatologist</option>
-                                                        <option>Endocrinologist</option>
-                                                        <option>Gastroenterologist</option>
-                                                        <option>Nephrologist</option>
-                                                        <option>Neurologist</option>
-                                                        <option>Physician Executive</option>
-                                                        <option>Radiologist</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <select class="select2 form-control custom-select" name="years">
-                                                        <option>5 Years</option>
-                                                        <option>1 Years</option>
-                                                        <option>2 Years</option>
-                                                        <option>3 Years</option>
-                                                        <option>4 Years</option>
-                                                    </select>
-                                                </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row nested-col col-sm-6 text-center mx-auto">
-                                                <div class="form-group row col-xl-12 col-sm-8">
-                                                <div class="col-sm-6">
-                                                    <select class="select2 form-control custom-select" name="doctor_type">
-                                                        <option>Rectal Surgeons</option>
-                                                        <option>Pediatrician</option>
-                                                        <option>Surgeon</option>
-                                                        <option>Psychiatrist</option>
-                                                        <option>Dermatologist</option>
-                                                        <option>Endocrinologist</option>
-                                                        <option>Gastroenterologist</option>
-                                                        <option>Nephrologist</option>
-                                                        <option>Neurologist</option>
-                                                        <option>Physician Executive</option>
-                                                        <option>Radiologist</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <select class="select2 form-control custom-select" name="years">
-                                                        <option>3 Years</option>
-                                                        <option>1 Years</option>
-                                                        <option>2 Years</option>
-                                                        <option>3 Years</option>
-                                                        <option>4 Years</option>
-                                                    </select>
-                                                </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row nested-col col-sm-6 text-center mx-auto">
-                                                <div class="form-group row col-xl-12 col-sm-8">
-                                                <div class="col-sm-6">
-                                                    <select class="select2 form-control custom-select" name="doctor_type">
-                                                        <option>Speciality</option>
-                                                        <option>Pediatrician</option>
-                                                        <option>Surgeon</option>
-                                                        <option>Psychiatrist</option>
-                                                        <option>Dermatologist</option>
-                                                        <option>Endocrinologist</option>
-                                                        <option>Gastroenterologist</option>
-                                                        <option>Nephrologist</option>
-                                                        <option>Neurologist</option>
-                                                        <option>Physician Executive</option>
-                                                        <option>Radiologist</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-sm-5">
-                                                    <select class="select2 form-control custom-select" name="years">
-                                                        <option>No of years</option>
-                                                        <option>1 Years</option>
-                                                        <option>2 Years</option>
-                                                        <option>3 Years</option>
-                                                        <option>4 Years</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-sm-1" style="padding: 0px; margin-left: -9px;">
-                                                  <button type="button" class="btn btn-outline-primary" style="padding: 12px 16px;"><i class="fa fa-plus"></i></button>
-                                                </div>
-                                                </div>
-                                            </div>
-                                        
-                                        </section>
-
-
-                                        <h2>Education</h2>
-                                        <section class="mt-3 ml-2">
-                                            <div class="row nested-col col-sm-8 text-center mx-auto">
-                                                <div class="form-group row col-xl-12 col-sm-8">
-                                                    <div class="col-sm-3 custom_column">
-                                                        <input id="text" name="study" type="text" class="form-control" placeholder="Graduation">
-                                                    </div>
-                                                    <div class="col-sm-3 custom_column">
-                                                        <input id="text" name="college" type="text" class="form-control" placeholder="University of Boston">
-                                                    </div>
-                                                    <div class="col-sm-2 custom_column">
-                                                        <input id="text" name="first_year" type="text" class="form-control" placeholder="2008">
-                                                    </div>
-                                                    <div class="col-sm-2 custom_column">
-                                                        <input id="text" name="last_year" type="text" class="form-control" placeholder="2012">
-                                                    </div>
-                                                    <div class="col-sm-2 custom_column">
-                                                        <input id="text" name="country" type="text" class="form-control" placeholder="USA">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row nested-col col-sm-8 text-center mx-auto">
-                                                <div class="form-group row col-xl-12 col-sm-8">
-                                                    <div class="col-sm-3 custom_column">
-                                                        <input id="text" name="study" type="text" class="form-control" placeholder="Doctor of Medicine (MD)">
-                                                    </div>
-                                                    <div class="col-sm-3 custom_column">
-                                                        <input id="text" name="college" type="text" class="form-control" placeholder="University College London">
-                                                    </div>
-                                                    <div class="col-sm-2 custom_column">
-                                                        <input id="text" name="first_year" type="text" class="form-control" placeholder="2015">
-                                                    </div>
-                                                    <div class="col-sm-2 custom_column">
-                                                        <input id="text" name="last_year" type="text" class="form-control" placeholder="2019">
-                                                    </div>
-                                                    <div class="col-sm-2 custom_column">
-                                                        <input id="text" name="country" type="text" class="form-control" placeholder="UK">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row nested-col col-sm-8 text-center mx-auto">
-                                                <div class="form-group row col-xl-12 col-sm-8">
-                                                    <div class="col-sm-3 custom_column">
-                                                        <input id="text" name="study" type="text" class="form-control" placeholder="Level">
-                                                    </div>
-                                                    <div class="col-sm-3 custom_column">
-                                                        <input id="text" name="college" type="text" class="form-control" placeholder="Institute">
-                                                    </div>
-                                                    <div class="col-sm-2 custom_column">
-                                                        <input id="text" name="first_year" type="text" class="form-control" placeholder="From Year">
-                                                    </div>
-                                                    <div class="col-sm-2 custom_column">
-                                                        <input id="text" name="last_year" type="text" class="form-control" placeholder="To Year">
-                                                    </div>
-                                                    <div class="col-sm-1 custom_column">
-                                                        <input id="text" name="country" type="text" class="form-control" placeholder="Country">
-                                                    </div>
-                                                    <div class="col-sm-1" style="padding: 0px; margin-left: -9px;">
-                                                      <button type="button" class="btn btn-outline-primary" style="padding: 12px 16px;"><i class="fa fa-plus"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                      
-                                        </section>
-
-                                       
-                                        <h2>Experience</h2>
-                                        <section class="mt-3 ml-2">
-                                            <div class="row nested-col col-sm-8 text-center mx-auto">
-                                                <div class="form-group row col-xl-12 col-sm-8">
-                                                    <div class="col-sm-3 custom_column">
-                                                        <input id="text" name="study" type="text" class="form-control" placeholder="UCSF Medical Center">
-                                                    </div>
-                                                    <div class="col-sm-3 custom_column">
-                                                        <input id="text" name="college" type="text" class="form-control" placeholder="Assistant Doctor">
-                                                    </div>
-                                                    <div class="col-sm-2 custom_column">
-                                                        <input id="text" name="first_year" type="text" class="form-control" placeholder="2008">
-                                                    </div>
-                                                    <div class="col-sm-2 custom_column">
-                                                        <input id="text" name="last_year" type="text" class="form-control" placeholder="2012">
-                                                    </div>
-                                                    <div class="col-sm-2 custom_column">
-                                                        <input id="text" name="country" type="text" class="form-control" placeholder="USA">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row nested-col col-sm-8 text-center mx-auto">
-                                                <div class="form-group row col-xl-12 col-sm-8">
-                                                    <div class="col-sm-3 custom_column">
-                                                        <input id="text" name="study" type="text" class="form-control" placeholder="Johns Hopkings Hospital">
-                                                    </div>
-                                                    <div class="col-sm-3 custom_column">
-                                                        <input id="text" name="college" type="text" class="form-control" placeholder="Cardiologist">
-                                                    </div>
-                                                    <div class="col-sm-2 custom_column">
-                                                        <input id="text" name="first_year" type="text" class="form-control" placeholder="2015">
-                                                    </div>
-                                                    <div class="col-sm-2 custom_column">
-                                                        <input id="text" name="last_year" type="text" class="form-control" placeholder="2019">
-                                                    </div>
-                                                    <div class="col-sm-2 custom_column">
-                                                        <input id="text" name="country" type="text" class="form-control" placeholder="UK">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row nested-col col-sm-8 text-center mx-auto">
-                                                <div class="form-group row col-xl-12 col-sm-8">
-                                                    <div class="col-sm-3 custom_column">
-                                                        <input id="text" name="study" type="text" class="form-control" placeholder="Level">
-                                                    </div>
-                                                    <div class="col-sm-3 custom_column">
-                                                        <input id="text" name="college" type="text" class="form-control" placeholder="Institute">
-                                                    </div>
-                                                    <div class="col-sm-2 custom_column">
-                                                        <input id="text" name="first_year" type="text" class="form-control" placeholder="From Year">
-                                                    </div>
-                                                    <div class="col-sm-2 custom_column">
-                                                        <input id="text" name="last_year" type="text" class="form-control" placeholder="To Year">
-                                                    </div>
-                                                    <div class="col-sm-1 custom_column">
-                                                        <input id="text" name="country" type="text" class="form-control" placeholder="Country">
-                                                    </div>
-                                                    <div class="col-sm-1" style="padding: 0px; margin-left: -9px;">
-                                                      <button type="button" class="btn btn-outline-primary" style="padding: 12px 16px;"><i class="fa fa-plus"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                      
-                                        </section>
-
-                                        <h2>Additional Information</h2>
-                                        <section class="mt-3 ml-2">
-                                            <div class="row nested-col col-sm-6 text-center mx-auto">
-                                        	<div class="form-group row col-xl-12 col-sm-8">
-                                                <label class="col-lg-12 control-label "><strong>Additional Information:</strong> Please specify any additional information.</label>
-                                        	</div>
-                                        	</div>
-                                            <div class="row nested-col col-sm-6 text-center mx-auto">
-                                             <div class="form-group row col-xl-12 col-sm-8">
+                                        <section class="mt-3 ml-2 align-items-center text-center">
+                                            <div class="row cust_row">
+    
                                                 <div class="col-sm-12">
-                                                    <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-12 col-md-5 m-m">
+                                                                <select class="form-control">
+                                                                    <option>Cardiologist</option>
+                                                                    <option>Pediatrician</option>
+                                                                    <option>Surgeon</option>
+                                                                    <option>Psychiatrist</option>
+                                                                    <option>Dermatologist</option>
+                                                                    <option>Endocrinologist</option>
+                                                                    <option>Gastroenterologist</option>
+                                                                    <option>Nephrologist</option>
+                                                                    <option>Neurologist</option>
+                                                                    <option>Physician Executive</option>
+                                                                    <option>Radiologist</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-8 col-sm-10 col-md-5 m-m">
+                                                                <select class="form-control">
+                                                                    <option>5 Years</option>
+                                                                    <option>1 Years</option>
+                                                                    <option>2 Years</option>
+                                                                    <option>3 Years</option>
+                                                                    <option>4 Years</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-4 col-sm-2 col-md-1 m-m text-right">
+                                                                <button type="button" class="btn btn-outline-primary removeitem"
+                                                                style="padding: 12px 16px;"><i class="fa fa-close"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-12 col-md-5 m-m">
+                                                                <select class="form-control">
+                                                                    <option>Cardiologist</option>
+                                                                    <option>Pediatrician</option>
+                                                                    <option>Surgeon</option>
+                                                                    <option>Psychiatrist</option>
+                                                                    <option>Dermatologist</option>
+                                                                    <option>Endocrinologist</option>
+                                                                    <option>Gastroenterologist</option>
+                                                                    <option>Nephrologist</option>
+                                                                    <option>Neurologist</option>
+                                                                    <option>Physician Executive</option>
+                                                                    <option>Radiologist</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-8 col-sm-10 col-md-5 m-m">
+                                                                <select class="form-control">
+                                                                    <option>5 Years</option>
+                                                                    <option>1 Years</option>
+                                                                    <option>2 Years</option>
+                                                                    <option>3 Years</option>
+                                                                    <option>4 Years</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-4 col-sm-2 col-md-1 m-m text-right">
+                                                                <button type="button" class="btn btn-outline-primary removeitem"
+                                                                style="padding: 12px 16px;"><i class="fa fa-close"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-12 col-md-5 m-m">
+                                                                <select class="form-control">
+                                                                    <option>Cardiologist</option>
+                                                                    <option>Pediatrician</option>
+                                                                    <option>Surgeon</option>
+                                                                    <option>Psychiatrist</option>
+                                                                    <option>Dermatologist</option>
+                                                                    <option>Endocrinologist</option>
+                                                                    <option>Gastroenterologist</option>
+                                                                    <option>Nephrologist</option>
+                                                                    <option>Neurologist</option>
+                                                                    <option>Physician Executive</option>
+                                                                    <option>Radiologist</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-8 col-sm-10 col-md-5 m-m">
+                                                                <select class="form-control">
+                                                                    <option>5 Years</option>
+                                                                    <option>1 Years</option>
+                                                                    <option>2 Years</option>
+                                                                    <option>3 Years</option>
+                                                                    <option>4 Years</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-4 col-sm-2 col-md-1 m-m text-right">
+                                                                <button type="button" class="btn btn-outline-primary removeitem"
+                                                                style="padding: 12px 16px;"><i class="fa fa-close"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-12 col-md-5 m-m">
+                                                                <select class="form-control">
+                                                                    <option>Cardiologist</option>
+                                                                    <option>Pediatrician</option>
+                                                                    <option>Surgeon</option>
+                                                                    <option>Psychiatrist</option>
+                                                                    <option>Dermatologist</option>
+                                                                    <option>Endocrinologist</option>
+                                                                    <option>Gastroenterologist</option>
+                                                                    <option>Nephrologist</option>
+                                                                    <option>Neurologist</option>
+                                                                    <option>Physician Executive</option>
+                                                                    <option>Radiologist</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-8 col-sm-10 col-md-5 m-m">
+                                                                <select class="form-control">
+                                                                    <option>5 Years</option>
+                                                                    <option>1 Years</option>
+                                                                    <option>2 Years</option>
+                                                                    <option>3 Years</option>
+                                                                    <option>4 Years</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-4 col-sm-2 col-md-1 m-m text-right">
+                                                                <button type="button" class="btn btn-outline-primary addmore"
+                                                                style="padding: 12px 16px;"><i class="fa fa-plus"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
                                             </div>
+                                        </section>
+
+                                        <!-- ======== EDUCATION ============= -->
+                                        <h2>Education</h2>
+                                        <section class="mt-3 ml-2 align-items-center text-center">
+                                            <div class="row cust_row edication">
+    
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-12 col-md-4 m-m">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="Gradiuation">
+                                                            </div>
+                                                            <div class="col-6 col-sm-6 col-md-4 m-m">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="School/University">
+                                                            </div>
+                                                            <div class="col-6 col-sm-6 col-md-1 m-m text-right">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="2008">
+                                                            </div>
+                                                            <div class="col-5 col-sm-5 col-md-1 m-m text-right">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="2012">
+                                                            </div>
+                                                            <div class="col-5 col-sm-5 col-md-1 m-m text-right">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="USA">
+                                                            </div>
+                                                            <div class="col-2 col-sm-2 col-md-1 m-m text-right">
+                                                                <button type="button" class="btn btn-outline-primary removeitem"
+                                                                style="padding: 12px 16px;"><i class="fa fa-close"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-12 col-md-4 m-m">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="Gradiuation">
+                                                            </div>
+                                                            <div class="col-6 col-sm-6 col-md-4 m-m">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="School/University">
+                                                            </div>
+                                                            <div class="col-6 col-sm-6 col-md-1 m-m text-right">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="2008">
+                                                            </div>
+                                                            <div class="col-5 col-sm-5 col-md-1 m-m text-right">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="2012">
+                                                            </div>
+                                                            <div class="col-5 col-sm-5 col-md-1 m-m text-right">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="USA">
+                                                            </div>
+                                                            <div class="col-2 col-sm-2 col-md-1 m-m text-right">
+                                                                <button type="button" class="btn btn-outline-primary removeitem"
+                                                                style="padding: 12px 16px;"><i class="fa fa-close"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-12 col-md-4 m-m">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="Gradiuation">
+                                                            </div>
+                                                            <div class="col-6 col-sm-6 col-md-4 m-m">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="School/University">
+                                                            </div>
+                                                            <div class="col-6 col-sm-6 col-md-1 m-m text-right">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="2008">
+                                                            </div>
+                                                            <div class="col-5 col-sm-5 col-md-1 m-m text-right">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="2012">
+                                                            </div>
+                                                            <div class="col-5 col-sm-5 col-md-1 m-m text-right">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="USA">
+                                                            </div>
+                                                            <div class="col-2 col-sm-2 col-md-1 m-m text-right">
+                                                                <button type="button" class="btn btn-outline-primary addmore"
+                                                                style="padding: 12px 16px;"><i class="fa fa-plus"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                
                                             </div>
-                                        </div>
+                                        </section>
+
+                                        
+                                        <!-- ======== EXPERIENCE ============= -->
+                                        <h2>Experience</h2>
+                                        <section class="mt-3 ml-2 align-items-center text-center">
+                                            <div class="row cust_row edication">
+    
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-12 col-md-4 m-m">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="UCSF Medical Center">
+                                                            </div>
+                                                            <div class="col-6 col-sm-6 col-md-4 m-m">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="Assistance Doctor">
+                                                            </div>
+                                                            <div class="col-6 col-sm-6 col-md-1 m-m text-right">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="2013">
+                                                            </div>
+                                                            <div class="col-5 col-sm-5 col-md-1 m-m text-right">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="2020">
+                                                            </div>
+                                                            <div class="col-5 col-sm-5 col-md-1 m-m text-right">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="USA">
+                                                            </div>
+                                                            <div class="col-2 col-sm-2 col-md-1 m-m text-right">
+                                                                <button type="button" class="btn btn-outline-primary removeitem"
+                                                                style="padding: 12px 16px;"><i class="fa fa-close"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-12 col-md-4 m-m">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="Hopkins Hostpital">
+                                                            </div>
+                                                            <div class="col-6 col-sm-6 col-md-4 m-m">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="Cardiologist">
+                                                            </div>
+                                                            <div class="col-6 col-sm-6 col-md-1 m-m text-right">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="2012">
+                                                            </div>
+                                                            <div class="col-5 col-sm-5 col-md-1 m-m text-right">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="2014">
+                                                            </div>
+                                                            <div class="col-5 col-sm-5 col-md-1 m-m text-right">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="UK">
+                                                            </div>
+                                                            <div class="col-2 col-sm-2 col-md-1 m-m text-right">
+                                                                <button type="button" class="btn btn-outline-primary removeitem"
+                                                                style="padding: 12px 16px;"><i class="fa fa-close"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-12 col-md-4 m-m">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="Level">
+                                                            </div>
+                                                            <div class="col-6 col-sm-6 col-md-4 m-m">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="Institute">
+                                                            </div>
+                                                            <div class="col-6 col-sm-6 col-md-1 m-m text-right">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="From Year">
+                                                            </div>
+                                                            <div class="col-5 col-sm-5 col-md-1 m-m text-right">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="To Year">
+                                                            </div>
+                                                            <div class="col-5 col-sm-5 col-md-1 m-m text-right">
+                                                                <input id="text" name="blood" type="text" class="form-control"
+                                                                placeholder="Country">
+                                                            </div>
+                                                            <div class="col-2 col-sm-2 col-md-1 m-m text-right">
+                                                                <button type="button" class="btn btn-outline-primary addmore"
+                                                                style="padding: 12px 16px;"><i class="fa fa-plus"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                
+                                            </div>
+                                        </section>
+
+
+                                        <!-- ======== ADDITIONAL INFO ============= -->
+                                        <h2>Additional Information</h2>
+                                        <section class="mt-3 ml-2 align-items-center text-center">
+                                            <div class="row cust_row additinfo">
+                                                <div class="col-12 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label class="col-lg-12 control-label "><strong>Additional Information:</strong> Please specify any additional information.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" rows="5"
+                                                        placeholder="Message"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </section>
                                     </div>
 
