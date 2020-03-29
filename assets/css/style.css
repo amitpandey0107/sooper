@@ -2985,6 +2985,9 @@ ul.p-social-link li a {
 #appcheckout .dataTables_paginate{
     margin-top: 25px;
 }
+#appmobile{
+    display: none;
+}
 @media only screen and (max-width:771px) {
     .card-body input {
         margin-bottom: 15px;
@@ -2995,4 +2998,63 @@ ul.p-social-link li a {
     #appcheckout .center-mobile {
         text-align: center;
     }
+    #appdesktop {
+        display: none;
+    }
+    #appmobile {
+        display: block;
+        padding: 15px;
+        background-color: #ffffff;
+    }
+    /* div#appcheckout {
+        margin-left: 0 !important;
+    } */
+    
+}
+#appmobile .header-title {
+    margin-bottom: 20px;
+}
+.mcard{
+    background-color: #ffffff;
+    border:1px solid #cccccc;
+    border-radius: 5px;
+    min-height: 100px;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+.mcard .cardrow {
+    margin: 9px 0;
+    display: flex;
+}
+.mcard .cardrow .cardcol {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.mcard .textgrey{
+    color: #73787e;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.mcard .textblack{
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+#appmobile .heading-bottom{
+    margin-bottom: 70px;
+}
+.mcard .cardrow .actionbtm {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
 }

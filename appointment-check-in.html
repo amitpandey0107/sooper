@@ -142,7 +142,7 @@
             </div><!-- sidebar left end-->
 
             <!-- body content start-->
-            <div class="body-content">
+            <div class="body-content" id="appcheckout">
                 <!-- header section start-->
                 <div class="header-section">
                     <!--logo and logo icon start-->
@@ -317,20 +317,16 @@
                             <div class="card m-b-30">
                                 <div class="card-body">
                                    <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-md-2">
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-8">
                                             <div class="row">
-                                                <div class="col-md-2">
-                                                </div>
-                                                <div class="col-md-8">
+                                                <div class="col-md-12">
                                                 <h6 class="text-center">ENTER PATIENT NAME OR DATE OF BIRTH</h6>
-                                                </div>
-                                                <div class="col-md-2">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-2">
                                         </div>
                                    </div>
                                    <br>
@@ -373,7 +369,8 @@
                         </div>
                     </div><!--END ROW-->
                     
-                   <div class="row">
+                    <div id="appdesktop">
+                        <div class="row">
                             <div class="col-lg-12 col-sm-12">
                                 <div class="card m-b-30">
                                     <div class="card-body table-responsive">
@@ -382,8 +379,12 @@
                                                 <h5 class="header-title">SCHEDULED APPOINTMENT</h5>
                                             </div>
                                             <div class="col-lg-6">
-                                                <button type="button" class="btn btn-default"  style="float: right;">Display All</button>
-                                                <button type="button" class="btn btn-default"  style="float: right;">Display</button>
+                                                <div class="btn-group dropdown-btn-group pull-right show"><button class="btn btn-outline-secondary">Display all</button><button class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Display <span class="caret"></span></button><ul class="dropdown-menu show" x-placement="top-start" style="position: absolute; transform: translate3d(80px, -218px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                    <li class="checkbox-row"><input type="checkbox" name="toggle-tech-companies-1-col-1" id="toggle-tech-companies-1-col-1" value="tech-companies-1-col-1"> <label for="toggle-tech-companies-1-col-1">Name</label></li>
+                                                    <li class="checkbox-row"><input type="checkbox" name="toggle-tech-companies-1-col-2" id="toggle-tech-companies-1-col-2" value="tech-companies-1-col-2"> <label for="toggle-tech-companies-1-col-2">Date of Birth</label></li>
+                                                    <li class="checkbox-row"><input type="checkbox" name="toggle-tech-companies-1-col-3" id="toggle-tech-companies-1-col-3" value="tech-companies-1-col-3"> <label for="toggle-tech-companies-1-col-3">Consulting Doctor</label></li>
+                                                    <li class="checkbox-row"><input type="checkbox" name="toggle-tech-companies-1-col-4" id="toggle-tech-companies-1-col-4" value="tech-companies-1-col-4"> <label for="toggle-tech-companies-1-col-4">Check Out</label></li>
+                                                </ul></div>
                                             </div>
                                         </div><br>
                                         <div class="">
@@ -399,7 +400,7 @@
                                                     <th class="sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 15%">DATE OF BIRTH</th>
                                                     <th class="sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 25%">CONSULTING DOCTOR</th>
                                                     <th class="sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 15%">CHECK IN</th>
-                                                   </tr>
+                                                </tr>
                                                 </thead>
 
                                         <tbody>
@@ -411,7 +412,7 @@
                                                     <td>Mark Hammil</td>
                                                     <td style="white-space: nowrap; width: 15%;">
                                                     <div class="tabledit-toolbar btn-toolbar" style="text-align: left;">
-                                                       <div class="btn-group btn-group-sm" style="float: none;">
+                                                    <div class="btn-group btn-group-sm" style="float: none;">
                                                         <button type="button" class="tabledit-edit-button btn btn-sm btn-warning" style="float: none; margin: 5px;">
                                                             <span class="ti-pencil"></span>
                                                         </button>
@@ -430,7 +431,7 @@
                                                     <td>Mark Hammil</td>
                                                     <td style="white-space: nowrap; width: 15%;">
                                                     <div class="tabledit-toolbar btn-toolbar" style="text-align: left;">
-                                                       <div class="btn-group btn-group-sm" style="float: none;">
+                                                    <div class="btn-group btn-group-sm" style="float: none;">
                                                         <button type="button" class="tabledit-edit-button btn btn-sm btn-warning" style="float: none; margin: 5px;">
                                                             <span class="ti-pencil"></span>
                                                         </button>
@@ -449,7 +450,7 @@
                                                     <td>Mark Hammil</td>
                                                     <td style="white-space: nowrap; width: 15%;">
                                                     <div class="tabledit-toolbar btn-toolbar" style="text-align: left;">
-                                                       <div class="btn-group btn-group-sm" style="float: none;">
+                                                    <div class="btn-group btn-group-sm" style="float: none;">
                                                         <button type="button" class="tabledit-edit-button btn btn-sm btn-warning" style="float: none; margin: 5px;">
                                                             <span class="ti-pencil"></span>
                                                         </button>
@@ -468,7 +469,7 @@
                                                     <td>Mark Hammil</td>
                                                     <td style="white-space: nowrap; width: 15%;">
                                                     <div class="tabledit-toolbar btn-toolbar" style="text-align: left;">
-                                                       <div class="btn-group btn-group-sm" style="float: none;">
+                                                    <div class="btn-group btn-group-sm" style="float: none;">
                                                         <button type="button" class="tabledit-edit-button btn btn-sm btn-warning" style="float: none; margin: 5px;">
                                                             <span class="ti-pencil"></span>
                                                         </button>
@@ -480,14 +481,14 @@
                                                     </td>
                                                 </tr>
                                                 <tr role="row" class="odd">
-                                                   <td class="sorting_1">1:45 PM</td>
+                                                <td class="sorting_1">1:45 PM</td>
                                                     <td>08.22.2020</td>
                                                     <td>Mark Hammil</td>
                                                     <td>08.22.1983</td>
                                                     <td>Mark Hammil</td>
                                                     <td style="white-space: nowrap; width: 15%;">
                                                     <div class="tabledit-toolbar btn-toolbar" style="text-align: left;">
-                                                       <div class="btn-group btn-group-sm" style="float: none;">
+                                                    <div class="btn-group btn-group-sm" style="float: none;">
                                                         <button type="button" class="tabledit-edit-button btn btn-sm btn-warning" style="float: none; margin: 5px;">
                                                             <span class="ti-pencil"></span>
                                                         </button>
@@ -506,7 +507,7 @@
                                                     <td>Mark Hammil</td>
                                                     <td style="white-space: nowrap; width: 15%;">
                                                     <div class="tabledit-toolbar btn-toolbar" style="text-align: left;">
-                                                       <div class="btn-group btn-group-sm" style="float: none;">
+                                                    <div class="btn-group btn-group-sm" style="float: none;">
                                                         <button type="button" class="tabledit-edit-button btn btn-sm btn-warning" style="float: none; margin: 5px;">
                                                             <span class="ti-pencil"></span>
                                                         </button>
@@ -545,6 +546,204 @@
                                 </div>
                             </div>
                         </div>
+                    </div>  
+                    <!-- /appdesktop -->
+
+                    <div id="appmobile">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h5 class="header-title">CHECKED IN PATIENTS</h5>
+                            </div>
+                            <div class="col-12 col-sm-12">
+                                <div class="mcard">
+                                    <!-- /cardrow -->
+                                    <div class="cardrow">
+                                        <div class="cardcol">
+                                            <span class="textgrey">Time</span>
+                                        </div>
+                                        <div class="cardcol">
+                                            <span class="textblack">01:45 PM</span>
+                                        </div>
+                                    </div>
+                                    <!-- /cardrow -->
+                                    <div class="cardrow">
+                                        <div class="cardcol">
+                                            <span class="textgrey">Date</span>
+                                        </div>
+                                        <div class="cardcol">
+                                            <span class="textblack">08.22.2020</span>
+                                        </div>
+                                    </div>
+                                    <!-- /cardrow -->
+                                    <div class="cardrow">
+                                        <div class="cardcol">
+                                            <span class="textgrey">name</span>
+                                        </div>
+                                        <div class="cardcol">
+                                            <span class="textblack">Mark Hamill</span>
+                                        </div>
+                                    </div>
+                                    <!-- /cardrow -->
+                                    <div class="cardrow">
+                                        <div class="cardcol">
+                                            <span class="textgrey">Date of birth</span>
+                                        </div>
+                                        <div class="cardcol">
+                                            <span class="textblack">08.22.2020</span>
+                                        </div>
+                                    </div>
+                                    <!-- /cardrow -->
+                                    <div class="cardrow">
+                                        <div class="cardcol">
+                                            <span class="textgrey">Consultant Doctor</span>
+                                        </div>
+                                        <div class="cardcol">
+                                            <span class="textblack">Al Pacino</span>
+                                        </div>
+                                    </div>
+                                    <!-- /cardrow -->
+                                    <div class="cardrow">
+                                        <div class="btn-group btn-group-sm actionbtm">
+                                            <button type="button" class="tabledit-edit-button btn btn-sm btn-warning" style="float: none; margin: 5px;">
+                                                <span class="ti-pencil"></span>
+                                            </button>
+                                            <button type="button" class="tabledit-delete-button btn btn-sm btn-success" style="float: none; margin: 5px;">
+                                                <span class="ti-trash"></span>
+                                            </button>
+                                            </div>
+                                    </div>
+                                    <!-- /cardrow -->
+                                </div>
+                                <!-- /mcard -->
+
+                                <div class="mcard">
+                                    <!-- /cardrow -->
+                                    <div class="cardrow">
+                                        <div class="cardcol">
+                                            <span class="textgrey">Time</span>
+                                        </div>
+                                        <div class="cardcol">
+                                            <span class="textblack">01:45 PM</span>
+                                        </div>
+                                    </div>
+                                    <!-- /cardrow -->
+                                    <div class="cardrow">
+                                        <div class="cardcol">
+                                            <span class="textgrey">Date</span>
+                                        </div>
+                                        <div class="cardcol">
+                                            <span class="textblack">08.22.2020</span>
+                                        </div>
+                                    </div>
+                                    <!-- /cardrow -->
+                                    <div class="cardrow">
+                                        <div class="cardcol">
+                                            <span class="textgrey">name</span>
+                                        </div>
+                                        <div class="cardcol">
+                                            <span class="textblack">Mark Hamill</span>
+                                        </div>
+                                    </div>
+                                    <!-- /cardrow -->
+                                    <div class="cardrow">
+                                        <div class="cardcol">
+                                            <span class="textgrey">Date of birth</span>
+                                        </div>
+                                        <div class="cardcol">
+                                            <span class="textblack">08.22.2020</span>
+                                        </div>
+                                    </div>
+                                    <!-- /cardrow -->
+                                    <div class="cardrow">
+                                        <div class="cardcol">
+                                            <span class="textgrey">Consultant Doctor</span>
+                                        </div>
+                                        <div class="cardcol">
+                                            <span class="textblack">Al Pacino</span>
+                                        </div>
+                                    </div>
+                                    <!-- /cardrow -->
+                                    <div class="cardrow">
+                                        <div class="btn-group btn-group-sm actionbtm">
+                                            <button type="button" class="tabledit-edit-button btn btn-sm btn-warning" style="float: none; margin: 5px;">
+                                                <span class="ti-pencil"></span>
+                                            </button>
+                                            <button type="button" class="tabledit-delete-button btn btn-sm btn-success" style="float: none; margin: 5px;">
+                                                <span class="ti-trash"></span>
+                                            </button>
+                                            </div>
+                                    </div>
+                                    <!-- /cardrow -->
+                                </div>
+                                <!-- /mcard -->
+
+                                <div class="mcard">
+                                    <!-- /cardrow -->
+                                    <div class="cardrow">
+                                        <div class="cardcol">
+                                            <span class="textgrey">Time</span>
+                                        </div>
+                                        <div class="cardcol">
+                                            <span class="textblack">01:45 PM</span>
+                                        </div>
+                                    </div>
+                                    <!-- /cardrow -->
+                                    <div class="cardrow">
+                                        <div class="cardcol">
+                                            <span class="textgrey">Date</span>
+                                        </div>
+                                        <div class="cardcol">
+                                            <span class="textblack">08.22.2020</span>
+                                        </div>
+                                    </div>
+                                    <!-- /cardrow -->
+                                    <div class="cardrow">
+                                        <div class="cardcol">
+                                            <span class="textgrey">name</span>
+                                        </div>
+                                        <div class="cardcol">
+                                            <span class="textblack">Mark Hamill</span>
+                                        </div>
+                                    </div>
+                                    <!-- /cardrow -->
+                                    <div class="cardrow">
+                                        <div class="cardcol">
+                                            <span class="textgrey">Date of birth</span>
+                                        </div>
+                                        <div class="cardcol">
+                                            <span class="textblack">08.22.2020</span>
+                                        </div>
+                                    </div>
+                                    <!-- /cardrow -->
+                                    <div class="cardrow">
+                                        <div class="cardcol">
+                                            <span class="textgrey">Consultant Doctor</span>
+                                        </div>
+                                        <div class="cardcol">
+                                            <span class="textblack">Al Pacino</span>
+                                        </div>
+                                    </div>
+                                    <!-- /cardrow -->
+                                    <div class="cardrow">
+                                        <div class="btn-group btn-group-sm actionbtm">
+                                            <button type="button" class="tabledit-edit-button btn btn-sm btn-warning" style="float: none; margin: 5px;">
+                                                <span class="ti-pencil"></span>
+                                            </button>
+                                            <button type="button" class="tabledit-delete-button btn btn-sm btn-success" style="float: none; margin: 5px;">
+                                                <span class="ti-trash"></span>
+                                            </button>
+                                            </div>
+                                    </div>
+                                    <!-- /cardrow -->
+                                </div>
+                                <!-- /mcard -->
+                                
+                            </div>
+                            <!-- /col -->
+                        </div>
+                        <!-- /row -->
+                    </div>
+                    <!-- /appmobile -->
                        
 
 
