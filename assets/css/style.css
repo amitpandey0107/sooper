@@ -2965,3 +2965,34 @@ ul.p-social-link li a {
         width: 50% !important;
     }
 }
+
+/* ======= 29 March 2020 ============ */
+#appcheckout h6{
+    font-weight: 700;
+}
+#appcheckout .btnfind {
+    padding: 6px 36px;
+    height: 40px;
+    outline: none;
+}
+#appcheckout table tbody tr:nth-child(odd){
+    background-color:#f4f7fe;
+}
+#appcheckout .dropdown-toggle {
+    box-shadow: none;
+}
+#appcheckout .dataTables_info,
+#appcheckout .dataTables_paginate{
+    margin-top: 25px;
+}
+@media only screen and (max-width:771px) {
+    .card-body input {
+        margin-bottom: 15px;
+    }
+    #appcheckout .btnfind {
+        margin-top: 0;
+    }
+    #appcheckout .center-mobile {
+        text-align: center;
+    }
+}
