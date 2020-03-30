@@ -2750,6 +2750,19 @@ ul.p-social-link li a {
 #doctorProfile .greyCard {
     background-color: #ADAFCD;
 }
+#doctorProfile .header-title {
+    margin-top: 65px;
+    text-align: center;
+}
+#doctorProfile .header-title h4 {
+    margin-bottom: 20px !important;
+}
+#doctorProfile .center-mobile.button-width {
+    text-align: center !important;
+}
+#doctorProfile .center-mobile.button-width .mbtn{
+    float: none !important;
+}
 .procard{
     position: relative;
     margin-bottom: 30px;
@@ -3009,6 +3022,9 @@ ul.p-social-link li a {
     /* div#appcheckout {
         margin-left: 0 !important;
     } */
+    .page-head {
+        padding-top: 80px;
+    }
     
 }
 #appmobile .header-title {
@@ -3057,4 +3073,16 @@ ul.p-social-link li a {
     text-align: center;
     width: 100%;
     margin-top: 15px;
+}
+
+@media only screen and (max-width:480px) {
+    /* .body-content {
+        padding-right: 00px !important;
+    } */
+    .cust_row {
+        width: 99%;
+    }
+    .page-head {
+        padding-top: 80px;
+    }
 }
