@@ -3086,3 +3086,124 @@ ul.p-social-link li a {
         padding-top: 80px;
     }
 }
+
+/* ============= 31 March 2020 ============ */
+#docedit .wizard > .steps > ul > li {
+    width: 50%;
+}
+#docedit .wizard > .steps {
+    margin-bottom: 40px;
+}
+#docedit  .wizard > .content > .body label {
+    color: #c5c6cb;
+}
+#docedit .innerheading{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    position: relative;
+    border-bottom: 1px solid #b8b9be;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #484c57;
+}
+#docedit .mb10{
+    margin-bottom: 10px;
+}
+#docedit .mb30{
+    margin-bottom: 30px;
+}
+#docedit .addinfo a {
+    line-height: 29px;
+    display: inline;
+}
+#docedit .innerheading i.fa {
+    float: right;
+    background: #2e61f2;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 6px;
+    border-radius: 3px;
+}
+#docedit .closebuttongreen{
+    background-color: #27a844;
+    color: #ffffff;
+    border-color: #27a844;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+#docedit .closebutton{
+    background-color: #dc3546;
+    color: #ffffff;
+    border-color: #dc3546;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+#docedit .form-control {
+    height: 40px;
+}
+#docedit .wizard > .actions a, 
+#docedit .wizard > .actions a:active, 
+#docedit .wizard > .actions a:hover {
+    background-color: #2e61f2;
+    border-radius: 4px;
+    padding: 4px 45px;
+    border-radius: 25px;
+}
+#docedit .wizard > .actions .disabled a {
+    opacity: .65;
+    background-color: #6f717d;
+    color: #ffffff;
+    cursor: not-allowed;
+}
+#docedit button.btn.btn-primary.editable-submit.btn-sm {
+    background-color: #27a844 !important;
+    color: #ffffff;
+    border-color: #27a844 !important;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+}
+#docedit button.btn.btn-default.editable-cancel.btn-sm {
+    background-color: #dc3546;
+    color: #ffffff;
+    border-color: #dc3546;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+}
+.addinfowrp p {
+    margin-bottom: 0;
+}
+@media only screen and (max-width:771px) {
+    #docedit .avaitarImg {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    #docedit .avaitarImg img {
+        display: inline-block;
+    }
+    #docedit .innerheading {
+        margin-top: 30px;
+    }
+    #docedit .card-body {
+        padding-bottom: 120px;
+    }
+    #docedit .innerheading i.fa {
+        margin-right: 10px;
+    }
+}
