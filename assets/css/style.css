@@ -3207,3 +3207,161 @@ ul.p-social-link li a {
         margin-right: 10px;
     }
 }
+.graytxts label {
+    color: #c5c6cb;
+}
+#doctorarea .heading_color{
+    color: #2e61f2;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* =============
+04 April 2020
+============== */
+.rondBrtn {
+    border-radius: 28px;
+    padding: 8px 42px;
+    line-height: 30px;
+    outline: none;
+}
+.prescribeThis {
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
+#doctorarea .page-head h4 {
+    color: #2e61f2;
+}
+
+.wizard  .content {
+    margin-top: 40px !important;
+}
+.bottomCard {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.5rem;
+}
+
+
+.bottomForm {
+    border-top: 20px solid #f3f4f5;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-height: 74px;
+    background: #fff;
+    border-bottom: 1px solid #f3f4f5;
+    border-left: 1px solid #f3f4f5;
+    border-right: 1px solid #f3f4f5;
+    margin-right: 8px;
+    padding: 30px;
+}
+.bottomForm table tbody tr:nth-child(odd) {
+    background-color: #f4f7fe;
+}
+.bottomForm .bottomTitle{
+    text-transform: uppercase;
+}
+.bottomForm .bottomTitle span {
+    float: right;
+}
+.bottomForm .bottomTitle span i.fa {
+    color: #333;
+    font-size: 24px;
+    padding-left: 5px;
+}
+.mbt20{
+    margin-bottom: 20px;
+}
+.frmlbl{
+    color: #2e61f2;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 19px;
+    display: block;
+}
+.dataTable  img{
+    height: 35px;
+    width: 35px;
+}
+.dataTable a {
+    padding-right: 2px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+.eyellow{
+    background-color: #fdc107;
+    display: inline-block !important;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0 2px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+
+}
+.egreen{
+    background-color: #28a945;
+    display: inline-block !important;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0 2px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+
+}
+@media only screen and (max-width: 771px)
+{
+    .wizard > .content > .body {       
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .prescribeThis {
+        text-align: center;
+        margin-top: 40px;
+        width: 100%;
+    }
+    .graytxts {
+        width: 48%;
+        float: left;
+    }
+    .blktxt {
+        width: 48%;
+        float: left;
+    }
+    .graytxts br, 
+    .blktxt br {
+        display: none;
+    }
+    .graytxts label, 
+    .blktxt label {
+        margin-left: 0;
+    }
+    .mcol3{
+        width: 32%;
+        float: left;
+    }
+    #doctorarea .heading_color {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .custimg{
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .fix {
+        height: auto !important;
+    }
+    .fullwidth {
+        width: 100%;
+    }
+    
+}
